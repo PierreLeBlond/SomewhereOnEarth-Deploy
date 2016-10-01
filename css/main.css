@@ -1,0 +1,251 @@
+/* #C4C4C4
+ * #D1BCD1
+ *
+ * mark_my_word
+ * Josefin Slab
+ */
+
+@font-face {
+    font-family: mark_my_words;
+    src: url('mark_my_words.otf');
+}
+
+/* reset */
+
+* {
+}
+
+html {
+    height: 100%;
+    font-family: Josefin Slab, "Open Sans", sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    background-color: #FEFEFE;
+    width: 70%;
+    margin: auto;
+    font-size: 0;
+    /*box-sizing: border-box;*/
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+
+header {
+    width: 80%;
+    margin: auto;
+}
+
+#main-title {
+    font: 1rem mark_my_words, "Open Sans", sans-serif;
+    background-color: inherit;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    color: #636363;
+    text-align: center;
+}
+
+#main-title a h1 {
+    margin-bottom: 0;
+}
+
+#main-undertitle {
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    text-align: center;
+}
+
+#main-undertitle img.underline {
+    height: 70px;
+    display: inline-block;
+    width: 40%;
+}
+
+#main-undertitle img.earth {
+    height: 70px;
+    display: inline-block;
+    width: 20%;
+}
+
+nav {
+    font-family: mark_my_words;
+    width: 80%;
+    margin: auto;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li.nav-link {
+    position: relative;
+    font-size: 1.3rem;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav ul li.nav-link a {
+    color: #696969;
+    position: absolute;
+    width: 100%;
+    top: -20px;
+    left: 0;
+}
+
+nav ul li.nav-dumb {
+    display: inline-block;
+    width: 20%;
+}
+
+section h1:first-child {
+    text-align: center;
+    font-family: mark_my_words;
+}
+
+section {
+    font-size: 10px;
+    /*margin-top: 50px;*/
+    padding-bottom: 50px;
+}
+
+article {
+    font-size: 1rem;
+    width: 80%;
+    margin: auto;
+}
+
+article .article {
+    display: inline-block;
+    width: 100%;
+    font-family: Josefin Slab;
+}
+
+article .post {
+    display: inline-block;
+    width: 100%;
+    font-family: Josefin Slab;
+}
+
+.item-ratio {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-top: 10px;
+}
+
+.item-ratio:before {
+    display: block;
+    content: "";
+    margin-top: 61.8%;
+}
+
+.item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.item-frame {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: block;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.7) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.7) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.7) inset;
+}
+
+.item-shape {
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 0;
+    bottom: 0;
+    border-bottom: 60px solid #FFFFFF77;
+    border-right: 400px solid transparent;
+}
+
+.item-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: 100%;
+    display: block;
+    -webkit-transition: -webkit-filter 1s; /* Safari */
+    transition: filter 1s;
+}
+
+.item:hover .item-image {
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.item-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 2em;
+    color: #454545;
+}
+
+.item-title h4 {
+    margin: 0;
+    -webkit-transition: font-size 1s; /* Safari */
+    transition: font-size 1s;
+}
+
+.item:hover .item-title h4 {
+    /*font-size: 3em;*/
+}
+
+.article {
+    width: 30%;
+}
+
+.post {
+    width: 30%;
+}
+
+.page {
+    width: 30%;
+}
+
+footer {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    bottom: 0px;
+    height: 50px;
+}
+
+#legal-notice {
+    text-align: center;
+}
+
+#legal-notice p {
+    font-size: 0.6rem;
+}
+
+#legal-notice a {
+    color: blue;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Around the world</title>
+    <link>https://pierreleblond.github.io/AroundTheWorld/post/</link>
+    <description>Recent content in Posts on Around the world</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Aug 2016 19:27:41 +0200</lastBuildDate>
+    <atom:link href="https://pierreleblond.github.io/AroundTheWorld/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Germany</title>
+      <link>https://pierreleblond.github.io/AroundTheWorld/post/germany/</link>
+      <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://pierreleblond.github.io/AroundTheWorld/post/germany/</guid>
+      <description>&lt;p&gt;Halo !&lt;/p&gt;
+
+&lt;p&gt;Ich ese gern kartofel salad !&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

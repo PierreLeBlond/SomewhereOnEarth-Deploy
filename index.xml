@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Around the world</title>
+    <link>https://pierreleblond.github.io/AroundTheWorld/</link>
+    <description>Recent content on Around the world</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Sep 2016 19:13:24 +0200</lastBuildDate>
+    <atom:link href="https://pierreleblond.github.io/AroundTheWorld/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>https://pierreleblond.github.io/AroundTheWorld/article/about/</link>
+      <pubDate>Sun, 25 Sep 2016 19:13:24 +0200</pubDate>
+      
+      <guid>https://pierreleblond.github.io/AroundTheWorld/article/about/</guid>
+      <description>&lt;p&gt;Hi !&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m travelling.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Backpack</title>
+      <link>https://pierreleblond.github.io/AroundTheWorld/article/backpack/</link>
+      <pubDate>Sun, 25 Sep 2016 18:48:16 +0200</pubDate>
+      
+      <guid>https://pierreleblond.github.io/AroundTheWorld/article/backpack/</guid>
+      <description>
+
+&lt;p&gt;Apparently, the backpack has to be bought lastly, after all the other stuff
+you&amp;rsquo;ll need. So I bought it first, just to see.&lt;/p&gt;
+
+&lt;p&gt;I choose a 50L model, small enought to prevent me of putting too much stuff in
+it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pierreleblond.github.io/AroundTheWorld/static/images/undertitle.png&#34; alt=&#34;Test&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s what I will be carrying along :&lt;/p&gt;
+
+&lt;h3 id=&#34;clothes:de4de28282dc3dd85e1a82e3b6f91514&#34;&gt;Clothes&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A short&lt;/li&gt;
+&lt;li&gt;A jean&lt;/li&gt;
+&lt;li&gt;A hybrid short/trouser, quite cool&lt;/li&gt;
+&lt;li&gt;A short sleeves T-shirt&lt;/li&gt;
+&lt;li&gt;Two long sleeves T-shirt&lt;/li&gt;
+&lt;li&gt;Five underpants&lt;/li&gt;
+&lt;li&gt;Five socks&lt;/li&gt;
+&lt;li&gt;[&amp;hellip;]&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Germany</title>
+      <link>https://pierreleblond.github.io/AroundTheWorld/post/germany/</link>
+      <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://pierreleblond.github.io/AroundTheWorld/post/germany/</guid>
+      <description>&lt;p&gt;Halo !&lt;/p&gt;
+
+&lt;p&gt;Ich ese gern kartofel salad !&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
