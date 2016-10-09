@@ -3,34 +3,45 @@
   <head>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="https://pierreleblond.github.io/AroundTheWorld/css/main.css">
+    <link rel="stylesheet" href="https://www.somewhereonearth.xyzcss/main.css">
+    <link rel="stylesheet" href="https://www.somewhereonearth.xyzcss/earth.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Slab" />
-    <title>Articles</title>
+    <title>Somewhere on Earth - Articles</title>
   </head>
   <body>
 
     <header>
 
       <div id="main-title">
-        <a href="https://pierreleblond.github.io/AroundTheWorld/"><h1>Around the world</h1></a>
+        <a href="https://www.somewhereonearth.xyz"><h1 class="light-switch" >Somewhere on Earth</h1></a>
       </div>
 
       <div id="main-undertitle">
-        <img class="underline" alt="" src="https://pierreleblond.github.io/AroundTheWorld/images/undertitle.svg">
-        <img class="earth" alt="" src="https://pierreleblond.github.io/AroundTheWorld/images/earth.svg">
-        <img class="underline" alt="" src="https://pierreleblond.github.io/AroundTheWorld/images/undertitle.svg">
+        <img class="underline" alt="" src="https://www.somewhereonearth.xyzimages/undertitle_neg.svg">
+        <img id="earth-logo" class="earth" alt="" src="https://www.somewhereonearth.xyzimages/earth.svg">
+        <img class="underline" alt="" src="https://www.somewhereonearth.xyzimages/undertitle_neg.svg">
       </div>
 
     </header>
 
-    <nav>
+    <nav id="main-nav">
 
       <ul>
-        <li class="nav-link"> <a href="https://pierreleblond.github.io/AroundTheWorld//article/about"> About </a> </li>
-        <li class="nav-link"> <a href="https://pierreleblond.github.io/AroundTheWorld/article"> Articles </a> </li>
+        <li class="nav-link"> <a href="https://www.somewhereonearth.xyzarticle/about"> About </a> </li>
+        <li class="nav-link"> <a href="https://www.somewhereonearth.xyzarticle"> Articles </a> </li>
         <li class="nav-dumb"> </li>
-        <li class="nav-link"> <a href="https://pierreleblond.github.io/AroundTheWorld/post"> Posts </a> </li>
-        <li class="nav-link"> <a href="https://pierreleblond.github.io/AroundTheWorld//Gallery"> Gallery </a> </li>
+        <li class="nav-link"> <a href="https://www.somewhereonearth.xyzcountry"> Country </a> </li>
+        <li class="nav-link"> <a href="https://www.somewhereonearth.xyzgallery"> Gallery </a> </li>
+      </ul>
+
+    </nav>
+
+    <nav id="earth-nav">
+
+      <ul>
+        <li class="nav-link"> <a id="post-link" href="https://www.somewhereonearth.xyz"> Posts </a> </li>
+        <li class="nav-dumb"> </li>
+        <li class="nav-link"> <a id="gallery-link" href="https://www.somewhereonearth.xyz"> Gallery </a> </li>
       </ul>
 
     </nav>
@@ -43,10 +54,13 @@
     <h1> Articles </h1>
     <div class="item-ratio">
   <div class="item">
-    <a href="https://pierreleblond.github.io/AroundTheWorld/article/about/">
-      <div class="item-image" style="background-image: url(https://pierreleblond.github.io/AroundTheWorld/images/thumbnail/portrait.png);">
+    <a href="https://www.somewhereonearth.xyz/article/about/">
+      <div class="item-image" style="background-image: url(https://www.somewhereonearth.xyzimages/thumbnail/portrait.png);">
       </div>
       <div class="item-frame">
+        <svg width="100%" height="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
+          <path d="M 0 100 L 0 65 L 100 80 L 100 100 Z" style="fill: #FFFFFF77; stroke: none;"/>
+        </svg>
       </div>
       <div class="item-shape">
       </div>
@@ -60,10 +74,13 @@
 
     <div class="item-ratio">
   <div class="item">
-    <a href="https://pierreleblond.github.io/AroundTheWorld/article/backpack/">
-      <div class="item-image" style="background-image: url(https://pierreleblond.github.io/AroundTheWorld/images/thumbnail/default.png);">
+    <a href="https://www.somewhereonearth.xyz/article/backpack/">
+      <div class="item-image" style="background-image: url(https://www.somewhereonearth.xyzimages/thumbnail/default.png);">
       </div>
       <div class="item-frame">
+        <svg width="100%" height="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
+          <path d="M 0 100 L 0 65 L 100 80 L 100 100 Z" style="fill: #FFFFFF77; stroke: none;"/>
+        </svg>
       </div>
       <div class="item-shape">
       </div>
@@ -82,8 +99,8 @@
 <footer>
 
 <div id="legal-notice">
-  <p> © Pierre Lespingal 2016 - pierre.lespingal@gmail.com </p>
-  <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a><p>
+  <p class="light-switch"> © Pierre Lespingal 2016 - pierre.lespingal@gmail.com </p>
+  <p class="light-switch">Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a><p>
 </div>
 
 </footer>

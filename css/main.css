@@ -1,13 +1,13 @@
 /* #C4C4C4
  * #D1BCD1
  *
- * mark_my_word
+ * mark_my_words
  * Josefin Slab
  */
 
 @font-face {
     font-family: mark_my_words;
-    src: url('mark_my_words.otf');
+    src: url('/AroundTheWorld/fonts/mark_my_words.otf');
 }
 
 /* reset */
@@ -23,15 +23,24 @@ html {
 body {
     position: relative;
     min-height: 100%;
-    background-color: #FEFEFE;
+    background-color: #EEEEEE;
+    -webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
     width: 70%;
     margin: auto;
     font-size: 0;
     /*box-sizing: border-box;*/
+    z-index: -2;
+}
+
+.light-switch {
+    color: #030303;
+    -webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
 }
 
 a {
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -47,7 +56,7 @@ header {
 }
 
 #main-title {
-    font: 1rem mark_my_words, "Open Sans", sans-serif;
+    font: 0.6rem mark_my_words, "Open Sans", sans-serif;
     background-color: inherit;
     display: inline-block;
     width: 100%;
@@ -129,6 +138,33 @@ article {
     margin: auto;
 }
 
+.article figure {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    background-image: url("/AroundTheWorld/images/polaroid.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.article figure img {
+    position: relative;
+    width: 40%;
+    margin-top: 12%;
+    margin-bottom: 20%;
+    height: auto;
+    z-index: -1;
+}
+
+.article figure figcaption {
+    position: absolute;
+    text-align: center;
+    padding-bottom: 10%;
+    font: 0.7rem mark_my_words;
+}
+
 article .article {
     display: inline-block;
     width: 100%;
@@ -177,11 +213,7 @@ article .post {
 .item-shape {
     position: absolute;
     display: block;
-    height: 0;
-    width: 0;
     bottom: 0;
-    border-bottom: 60px solid #FFFFFF77;
-    border-right: 400px solid transparent;
 }
 
 .item-image {
@@ -192,18 +224,20 @@ article .post {
     display: block;
     -webkit-transition: -webkit-filter 1s; /* Safari */
     transition: filter 1s;
+    -webkit-filter: grayscale(80%);
+    filter: grayscale(80%);
 }
 
 .item:hover .item-image {
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
 .item-title {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    font-size: 2em;
+    bottom: 5%;
+    left: 5%;
+    font-size: 2vw;
     color: #454545;
 }
 
@@ -229,6 +263,10 @@ article .post {
     width: 30%;
 }
 
+aside {
+    text-align: center;
+}
+
 footer {
     display: inline-block;
     width: 100%;
@@ -248,4 +286,11 @@ footer {
 
 #legal-notice a {
     color: blue;
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+
+    body {
+        width: 100%;
+    }
 }

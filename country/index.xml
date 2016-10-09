@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Countries on Somewhere on Earth</title>
+    <link>https://www.somewhereonearth.xyz/country/</link>
+    <description>Recent content in Countries on Somewhere on Earth</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Oct 2016 11:56:23 +0200</lastBuildDate>
+    <atom:link href="https://www.somewhereonearth.xyz/country/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>slovakia</title>
+      <link>https://www.somewhereonearth.xyz/country/slovakia/</link>
+      <pubDate>Sun, 09 Oct 2016 11:56:23 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/slovakia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>poland</title>
+      <link>https://www.somewhereonearth.xyz/country/poland/</link>
+      <pubDate>Sun, 09 Oct 2016 11:56:03 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/poland/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>czechia</title>
+      <link>https://www.somewhereonearth.xyz/country/czechia/</link>
+      <pubDate>Sun, 09 Oct 2016 11:55:15 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/czechia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Germany</title>
+      <link>https://www.somewhereonearth.xyz/country/germany/</link>
+      <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/germany/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

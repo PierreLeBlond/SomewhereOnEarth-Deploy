@@ -2,24 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://pierreleblond.github.io/AroundTheWorld/</loc>
-    <lastmod>2016-09-25T19:13:24+02:00</lastmod>
+    <loc>https://www.somewhereonearth.xyz/</loc>
+    <lastmod>2016-10-09T11:56:23+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://pierreleblond.github.io/AroundTheWorld/article/about/</loc>
+    <loc>https://www.somewhereonearth.xyz/country/slovakia/</loc>
+    <lastmod>2016-10-09T11:56:23+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/poland/</loc>
+    <lastmod>2016-10-09T11:56:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/czechia/</loc>
+    <lastmod>2016-10-09T11:55:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/article/about/</loc>
     <lastmod>2016-09-25T19:13:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pierreleblond.github.io/AroundTheWorld/article/backpack/</loc>
+    <loc>https://www.somewhereonearth.xyz/article/backpack/</loc>
     <lastmod>2016-09-25T18:48:16+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pierreleblond.github.io/AroundTheWorld/post/germany/</loc>
+    <loc>https://www.somewhereonearth.xyz/country/germany/</loc>
     <lastmod>2016-08-28T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/germany/hallo/</loc>
+    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/germany/</loc>
   </url>
   
 </urlset>

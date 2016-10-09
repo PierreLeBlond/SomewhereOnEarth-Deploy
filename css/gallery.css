@@ -1,0 +1,21 @@
+
+.gallery {
+    display: inline-block;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery figure {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    width: 20%;
+}
+
+.gallery figcaption {
+    display: none;
+}
+
