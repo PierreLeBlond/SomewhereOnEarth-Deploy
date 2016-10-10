@@ -26,15 +26,15 @@ EARTH.Earth = function(){
 */
 EARTH.Earth.prototype.setupEarth = function(){
 
-    var indexMap = this.textureLoader.load("/AroundTheWorld/images/earth/map_indexed.png");
+    var indexMap = this.textureLoader.load("/images/earth/map_indexed.png");
 
     indexMap.magFilter = THREE.NearestFilter;
     indexMap.minFilter = THREE.NearestFilter;
 
     this.uniforms = {
-        map:{ type: 't', value: this.textureLoader.load("/AroundTheWorld/images/earth/earth_oil.png")},
+        map:{ type: 't', value: this.textureLoader.load("/images/earth/earth_oil.png")},
         indexmap: { type: 't', value: indexMap},
-        heightmap: { type: 't', value: this.textureLoader.load("/AroundTheWorld/images/earth/earth_height_map_med.jpg")},
+        heightmap: { type: 't', value: this.textureLoader.load("/images/earth/earth_height_map_med.jpg")},
         lookindex: { type: 'i', value: 5 },
         pickedindex: { type: 'i', value: 5 },
         uoffset:{ type: 'f', value: -0.0270 },

@@ -65,10 +65,10 @@ EARTH.App.prototype.setupApp = function(){
             var imgs = document.getElementsByClassName("underline");
 	    for(var i = 0; i < imgs.length; i++)
 	    {
-		imgs[i].src = "/AroundTheWorld/images/undertitle.svg";
+		imgs[i].src = "/images/undertitle.svg";
 	    }
 
-            document.getElementById("earth-logo").src = "/AroundTheWorld/images/earth_neg.svg";
+            document.getElementById("earth-logo").src = "/images/earth_neg.svg";
 
 	    document.getElementsByTagName("body")[0].style.backgroundColor = "#030303";
 	}
@@ -84,12 +84,12 @@ EARTH.App.prototype.setupApp = function(){
 		divs[i].style.color = "#030303";
 	    }
 
-            document.getElementById("earth-logo").src = "/AroundTheWorld/images/earth.svg";
+            document.getElementById("earth-logo").src = "/images/earth.svg";
 
             var imgs = document.getElementsByClassName("underline");
 	    for(var i = 0; i < imgs.length; i++)
 	    {
-		imgs[i].src = "/AroundTheWorld/images/undertitle_neg.svg";
+		imgs[i].src = "/images/undertitle_neg.svg";
 	    }
 
 	    document.getElementsByTagName("body")[0].style.backgroundColor = "#EEEEEE";

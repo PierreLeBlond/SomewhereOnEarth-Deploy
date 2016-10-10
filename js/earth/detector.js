@@ -29,7 +29,7 @@ EARTH.Detector = function(){
 }
 
 EARTH.Detector.prototype.setupDetector = function(){
-    this.uniforms.map.value = this.textureLoader.load("/AroundTheWorld/images/earth/map_indexed.png")
+    this.uniforms.map.value = this.textureLoader.load("/images/earth/map_indexed.png")
     this.uniforms.map.value.magFilter = THREE.NearestFilter;
     this.uniforms.map.value.minFilter = THREE.NearestFilter;
 

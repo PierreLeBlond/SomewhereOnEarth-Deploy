@@ -146,8 +146,8 @@ EARTH.Viewer.prototype.mouseclick = function(event){
     if(index > 0)
     {
         document.getElementById("earth-nav").style.display = "block";
-        document.getElementById("post-link").href = "/AroundTheWorld/" + this.getCountryName(index).toLowerCase() + "/";
-        document.getElementById("gallery-link").href = "/AroundTheWorld/gallery/" + this.getCountryName(index).toLowerCase() + "/";
+        document.getElementById("post-link").href = "/" + this.getCountryName(index).toLowerCase() + "/";
+        document.getElementById("gallery-link").href = "/gallery/" + this.getCountryName(index).toLowerCase() + "/";
     }else{
         document.getElementById("earth-nav").style.display = "none";
     }
