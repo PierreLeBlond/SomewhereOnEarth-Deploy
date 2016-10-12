@@ -27,7 +27,7 @@ EARTH.Scene.prototype.setupScene = function(){
     this.scene = new THREE.Scene();
 
     this.camera = new THREE.PerspectiveCamera( 75, 1.0, 0.00001, 200 );
-    this.camera.position.set(1,1,1.5);
+    this.camera.position.set(2,0,0);
     this.camera.lookAt(new THREE.Vector3(0, 0, 0));
 };
 

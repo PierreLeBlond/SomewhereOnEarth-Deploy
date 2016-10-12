@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://www.somewhereonearth.xyz/css/main.css">
+    <link rel="stylesheet" href="https://www.somewhereonearth.xyz/css/earth.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Slab" />
+    <LINK rel="SHORTCUT ICON" href="/images/earth.ico">
+    <title>Somewhere on Earth - Halo</title>
+  </head>
+  <body>
+
+    <header id="header" class="day">
+
+      <div id="header-wrap">
+
+        <div id="main-title">
+          <a href="https://www.somewhereonearth.xyz"><h1 class="light-switch" >Somewhere on Earth</h1></a>
+        </div>
+
+        <div id="second-title">
+          <h1 class="light-switch" >Travel's blog</h1>
+        </div>
+
+        <div id="main-undertitle">
+          <img class="underline" alt="" src="https://www.somewhereonearth.xyz/images/undertitle_neg.svg">
+          <img id="earth-logo" class="earth" alt="" src="https://www.somewhereonearth.xyz/images/earth.svg">
+          <img class="underline" alt="" src="https://www.somewhereonearth.xyz/images/undertitle_neg.svg">
+        </div>
+
+        <nav id="main-nav">
+
+          <ul>
+            <li class="nav-link"> <a href="https://www.somewhereonearth.xyz/article/about"> About </a> </li>
+            <li class="nav-link"> <a href="https://www.somewhereonearth.xyz/article"> Articles </a> </li>
+            <li class="nav-dumb"> </li>
+            <li class="nav-link"> <a href="https://www.somewhereonearth.xyz/country"> Country </a> </li>
+            <li class="nav-link"> <a href="https://www.somewhereonearth.xyz/gallery"> Gallery </a> </li>
+          </ul>
+
+        </nav>
+
+        <nav id="earth-nav">
+
+          <ul>
+            <li class="nav-link"> <a id="post-link" href="https://www.somewhereonearth.xyz">
+                
+                  Posts </a> </li>
+            <li class="nav-dumb"> </li>
+            <li class="nav-link"> <a id="gallery-link" href="https://www.somewhereonearth.xyz"> Gallery </a> </li>
+          </ul>
+
+        </nav>
+
+      </div>
+
+    </header>
+
+
+
+
+<section country="germany">
+
+  <h1 id="title" class="light-switch" >Halo</h1>
+
+    <div id="main">
+
+      <article>
+
+        <p>Halo !</p>
+
+<p>Ich esse gern kartoffelsalat !</p>
+
+
+      </article>
+
+      <aside>
+        
+
+
+<section>
+  <div>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+
+(function() {
+  
+  
+  if (window.location.hostname == "localhost")
+   return;
+
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  var disqus_shortname = 'Pierre';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</section>
+
+
+
+      </aside>
+
+    </div>
+
+  <div id="earth-section">
+  <div id="earth-div">
+  </div>
+</div>
+
+<script type="x-shader/x-vertex" id="vertexShader">
+
+varying vec2 uv_out;
+
+void main(){
+uv_out = uv;
+gl_Position = projectionMatrix*modelViewMatrix*vec4(position, 1.0);
+}
+
+</script>
+
+<script type="x-shader/x-vertex" id="vertexShaderHeightMapping">
+
+uniform sampler2D heightmap;
+
+varying vec2 uv_out;
+
+void main(){
+vec4 height = texture2D(heightmap, uv + vec2(0.027, -0.006));
+uv_out = uv;
+vec3 newPosition = (1.0 + height.x*0.1) * position;
+vec4 pos = projectionMatrix*modelViewMatrix*vec4(newPosition, 1.0);
+gl_Position = pos;
+}
+
+</script>
+
+<script type="x-shader/x-fragment" id="fragmentShader">
+
+uniform sampler2D map;
+uniform sampler2D secondmap;
+uniform sampler2D indexmap;
+uniform int pickedindex;
+uniform int lookindex;
+
+uniform float uoffset;
+uniform float voffset;
+
+varying vec2 uv_out;
+
+void main(){
+vec2 uv_new = uv_out + vec2(uoffset, voffset);
+vec4 color = texture2D(map, uv_out);
+vec4 colorIndex = texture2D(indexmap, uv_new);
+
+if(int(colorIndex.x*255.0) == pickedindex)
+gl_FragColor = mix(color, vec4(0.36, 1.0, 0.3, 1.0), 0.5);
+else if(int(colorIndex.x*255.0) == lookindex)
+gl_FragColor = mix(color, vec4(1.0, 1.0, 1.0, 1.0), 0.5);
+else
+gl_FragColor = color;
+}
+
+</script>
+
+<script type="x-shader/x-fragment" id="fragmentShaderDetector">
+
+uniform float uoffset;
+uniform float voffset;
+uniform sampler2D map;
+
+varying vec2 uv_out;
+
+void main(){
+vec2 uv_new = uv_out + vec2(uoffset, voffset);
+vec4 color = texture2D(map, uv_new);
+gl_FragColor = color;
+}
+
+</script>
+
+
+<script src="https://www.somewhereonearth.xyz/js/three.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/OrbitControls.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/Stats.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/dat.gui.min.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/data.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/scene.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/detector.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/viewer.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/earth.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/app.js"></script>
+
+
+
+</section>
+
+
+
+<footer>
+
+<div id="legal-notice">
+  <p class="light-switch"> © Pierre Lespingal 2016 - pierre.lespingal@gmail.com </p>
+  <p class="light-switch">Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a><p>
+</div>
+
+</footer>
+
+</body>
+</html>
+
+

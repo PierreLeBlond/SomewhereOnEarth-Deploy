@@ -27,6 +27,8 @@ EARTH.Viewer = function(){
     this.detector                                   = null;
     this.earth                                      = null;
 
+    this.renderId                                   = null;
+
     this.domElement                                 = null;
     this.countryPopup                               = null;
 
@@ -90,8 +92,9 @@ EARTH.Viewer.prototype.setupViewer = function(){
 
         this.resize(this.width, this.height, this.left, this.top);
 
-	this.stats = new Stats();
-	this.stats.setMode(0);
+	//this.stats = new Stats();
+	//this.stats.setMode(0);
+        //document.body.appendChild( this.stats.dom );
 
 	this.controls = new THREE.OrbitControls( this.scene.camera, this.domElement, this.domElement);
 	this.controls.enablePan = false;
@@ -99,8 +102,9 @@ EARTH.Viewer.prototype.setupViewer = function(){
 	this.controls.zoomSpeed = 0.5;
 	this.controls.minDistance = 1.01;
 	this.controls.maxDistance = 2.5;
+        this.controls.enableDamping = true;
+        this.controls.dampingFactor = 0.1;
 
-        document.body.appendChild( this.stats.dom );
 
         this.resizeEvent = this.resize.bind(this);
         window.addEventListener( 'resize',this.resizeEvent, false );
@@ -134,20 +138,43 @@ EARTH.Viewer.prototype.render = function(){
 
     this.animate();
 
-    this.stats.update();
+    if(this.stats)
+        this.stats.update();
+    this.controls.update();
 
     this.renderer.render(this.scene.scene, this.scene.camera);
 
 };
 
+EARTH.Viewer.prototype.stop = function(){
+    cancelAnimationFrame(this.renderId);
+}
+
 EARTH.Viewer.prototype.mouseclick = function(event){
     var index = this.getIndex(event.clientX, event.clientY);
+    this.pickCountry(index);
+}
+
+EARTH.Viewer.prototype.pickCountry = function(index){
     this.earth.uniforms.pickedindex.value = index;
-    if(index > 0)
+    var menu = EARTH.countryAvailable[index];
+    if(index > 0 && menu)
     {
         document.getElementById("earth-nav").style.display = "block";
-        document.getElementById("post-link").href = "/" + this.getCountryName(index).toLowerCase() + "/";
-        document.getElementById("gallery-link").href = "/gallery/" + this.getCountryName(index).toLowerCase() + "/";
+
+        if(menu%2 == 0){
+            document.getElementById("post-link").href = "/" + this.getCountryName(index).toLowerCase() + "/";
+            document.getElementById("post-link").style.display = "inline-block";
+        }
+        else
+            document.getElementById("post-link").style.display = "none";
+
+        if(menu%3 == 0){
+            document.getElementById("gallery-link").href = "/gallery/" + this.getCountryName(index).toLowerCase() + "/";
+            document.getElementById("gallery-link").style.display = "inline-block";
+        }
+        else
+            document.getElementById("gallery-link").style.display = "none";
     }else{
         document.getElementById("earth-nav").style.display = "none";
     }
@@ -164,7 +191,7 @@ EARTH.Viewer.prototype.mousemove = function(event){
         this.savedTime = currentTime;
         if(index > 0)
         {
-            this.countryPopup.innerHTML = this.getCountryName(index);
+            this.countryPopup.innerHTML = index + " : " + this.getCountryName(index);
             this.countryPopup.style.display = "block";
             var left = (event.clientX + 10) + "px";
             this.countryPopup.style.left = left;

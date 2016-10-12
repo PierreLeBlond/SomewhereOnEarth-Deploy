@@ -14,7 +14,9 @@ var EARTH = EARTH || {};
  */
 EARTH.App = function(){
     this.light                              = true;
+    this.isReady                            = false;
     this.viewer                             = null;
+    this.earth                              = null;
     this.windowResizeEvent                  = null;
 }
 
@@ -42,21 +44,45 @@ EARTH.App.prototype.setupApp = function(){
     this.viewer.setScene(scene);
     this.viewer.setupViewer();
 
-    var earth = new EARTH.Earth;
-    earth.setupEarth();
+    this.earth = new EARTH.Earth;
+    this.earth.setupEarth();
 
-    this.viewer.scene.scene.add( earth.earthObject );
-    this.viewer.earth = earth;
+    this.viewer.scene.scene.add( this.earth.earthObject );
+    this.viewer.earth = this.earth;
 
-    var that = this;
+    var country = document.getElementsByTagName("section")[0].getAttribute("country");
+    if(!country || country == "none")
+        country = "france";
+    if(country.charAt(0) == "/")
+        country = country.substring(1, country.length-1);
 
-    document.getElementById("earth-logo").onclick = function(){
-	if(that.light){
+    var id = EARTH.country[country];
+
+    var lat = parseInt(EARTH.countryPos.countries[id].lat);
+    lat *= Math.PI/180.0;
+    var lon = parseInt(EARTH.countryPos.countries[id].lon);
+    lon *= Math.PI/180.0;
+
+    this.viewer.scene.camera.position.set(2*Math.cos(lon)*Math.sin(lat), 2*Math.cos(lat), 2*Math.sin(lon)*Math.sin(lat));
+    this.viewer.scene.camera.lookAt(new THREE.Vector3(0, 0, 0));
+
+    this.viewer.pickCountry(EARTH.countryColorMap[id]);
+};
+
+EARTH.App.prototype.toogleEarth = function(){
+    if(!this.isReady)
+    {
+        this.setupApp();
+        this.isReady = true;
+    }
+
+    if(this.light){
 	    document.getElementById("main").style.display = "none";
+	    document.getElementById("title").style.display = "none";
 	    document.getElementById("earth-section").style.display = "block";
 	    document.getElementById("main-nav").style.display = "none";
 
-	    var divs = document.getElementsByClassName("light-switch");
+            var divs = document.getElementsByClassName("light-switch");
 	    for(var i = 0; i < divs.length; i++)
 	    {
 		divs[i].style.color = "#EEEEEE";
@@ -69,12 +95,16 @@ EARTH.App.prototype.setupApp = function(){
 	    }
 
             document.getElementById("earth-logo").src = "/images/earth_neg.svg";
+            document.getElementById("header").className = "night";
 
 	    document.getElementsByTagName("body")[0].style.backgroundColor = "#030303";
+            this.viewer.resize();
+            this.viewer.render();
 	}
 	else{
 	    document.getElementById("earth-section").style.display = "none";
 	    document.getElementById("main").style.display = "block";
+	    document.getElementById("title").style.display = "block";
 	    document.getElementById("earth-nav").style.display = "none";
 	    document.getElementById("main-nav").style.display = "block";
 
@@ -85,6 +115,7 @@ EARTH.App.prototype.setupApp = function(){
 	    }
 
             document.getElementById("earth-logo").src = "/images/earth.svg";
+            document.getElementById("header").className = "day";
 
             var imgs = document.getElementsByClassName("underline");
 	    for(var i = 0; i < imgs.length; i++)
@@ -93,11 +124,10 @@ EARTH.App.prototype.setupApp = function(){
 	    }
 
 	    document.getElementsByTagName("body")[0].style.backgroundColor = "#EEEEEE";
+            this.viewer.stop();
 	}
-	that.light = !that.light;
-        that.viewer.resize();
-    };
-};
+	this.light = !this.light;
+}
 
 var app = new EARTH.App();
 var domElement = document.getElementById('earth-div');
@@ -106,6 +136,6 @@ domElement.style.width = width;
 var height = "\"" + window.innerHeight + "px\"";
 domElement.style.height = height;
 app.setDomElement(domElement);
-app.setupApp();
-app.viewer.render();
 document.getElementById('earth-section').style.display = "none";
+document.getElementById("earth-logo").onclick = function(){app.toogleEarth();};
+console.log(document.getElementsByTagName("section")[0].getAttribute("country"));

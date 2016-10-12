@@ -16,8 +16,8 @@ EARTH.Detector = function(){
 
     this.uniforms =                                   {
         map:      { type: 't', value: null },
-        uoffset:  { type: 'f', value: -0.0270 },
-        voffset:  { type: 'f', value: 0.0060 }
+        uoffset:  { type: 'f', value: 0.000 },
+        voffset:  { type: 'f', value: 0.000 }
     };
 
     this.shaderMaterial                             = null;

@@ -51,18 +51,57 @@ a:hover, a:focus, a:active {
 }
 
 header {
-    width: 80%;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header.day {
+    background: #EEEEEE77; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#EEEEEEFF, #EEEEEEFF, #EEEEEEFF, #EEEEEE00); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#EEEEEEFF, #EEEEEEFF, #EEEEEEFF, #EEEEEE00); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#EEEEEEFF, #EEEEEEFF, #EEEEEEFF, #EEEEEE00); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#EEEEEEFF, #EEEEEEFF, #EEEEEEFF, #EEEEEE00); /* Standard syntax */
+}
+
+header.night {
+    background: #00000077; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#000000FF, #000000FF, #000000FF, #00000000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#000000FF, #000000FF, #000000FF, #00000000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#000000FF, #000000FF, #000000FF, #00000000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000000FF, #000000FF, #000000FF, #00000000); /* Standard syntax */
+}
+
+#header-wrap {
+    position: relative;
+    width: 70%;
     margin: auto;
 }
 
 #main-title {
     font: 0.6rem mark_my_words, "Open Sans", sans-serif;
     background-color: inherit;
-    display: inline-block;
-    width: 100%;
+    position: absolute;
+    width: 40%;
     margin: auto;
     color: #636363;
     text-align: center;
+    top: 10px;
+}
+
+#second-title {
+    font: 0.6rem mark_my_words, "Open Sans", sans-serif;
+    background-color: inherit;
+    position: absolute;
+    width: 40%;
+    right: 0;
+    margin: auto;
+    color: #636363;
+    text-align: center;
+    top: 10px;
 }
 
 #main-title a h1 {
@@ -73,6 +112,8 @@ header {
     display: inline-block;
     width: 100%;
     height: 70px;
+    padding-top: 10px;
+    padding-bottom: 50px;
     margin: auto;
     text-align: center;
 }
@@ -90,9 +131,10 @@ header {
 }
 
 nav {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
     font-family: mark_my_words;
-    width: 80%;
-    margin: auto;
 }
 
 nav ul {
@@ -100,7 +142,6 @@ nav ul {
 }
 
 nav ul li.nav-link {
-    position: relative;
     font-size: 1.3rem;
     display: inline-block;
     width: 20%;
@@ -110,10 +151,6 @@ nav ul li.nav-link {
 
 nav ul li.nav-link a {
     color: #696969;
-    position: absolute;
-    width: 100%;
-    top: -20px;
-    left: 0;
 }
 
 nav ul li.nav-dumb {
@@ -128,7 +165,7 @@ section h1:first-child {
 
 section {
     font-size: 10px;
-    /*margin-top: 50px;*/
+    padding-top: 130px;
     padding-bottom: 50px;
 }
 
@@ -142,7 +179,7 @@ article {
     position: relative;
     margin: auto;
     width: 100%;
-    background-image: url("/AroundTheWorld/images/polaroid.png");
+    /*background-image: url("/AroundTheWorld/images/polaroid.png");*/
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -152,16 +189,15 @@ article {
 .article figure img {
     position: relative;
     width: 40%;
-    margin-top: 12%;
-    margin-bottom: 20%;
+    /*margin-top: 12%;
+    margin-bottom: 20%;*/
     height: auto;
     z-index: -1;
 }
 
 .article figure figcaption {
-    position: absolute;
+    position: relative;
     text-align: center;
-    padding-bottom: 10%;
     font: 0.7rem mark_my_words;
 }
 
@@ -222,6 +258,10 @@ article .post {
     position: absolute;
     background-size: 100%;
     display: block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
     -webkit-transition: -webkit-filter 1s; /* Safari */
     transition: filter 1s;
     -webkit-filter: grayscale(80%);

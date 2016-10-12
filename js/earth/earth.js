@@ -32,13 +32,13 @@ EARTH.Earth.prototype.setupEarth = function(){
     indexMap.minFilter = THREE.NearestFilter;
 
     this.uniforms = {
-        map:{ type: 't', value: this.textureLoader.load("/images/earth/earth_oil.png")},
+        map:{ type: 't', value: this.textureLoader.load("/images/earth/earth_map.png")},
         indexmap: { type: 't', value: indexMap},
         heightmap: { type: 't', value: this.textureLoader.load("/images/earth/earth_height_map_med.jpg")},
         lookindex: { type: 'i', value: 5 },
         pickedindex: { type: 'i', value: 5 },
-        uoffset:{ type: 'f', value: -0.0270 },
-        voffset:{ type: 'f', value: 0.0060 }
+        uoffset:{ type: 'f', value: 0.000 },
+        voffset:{ type: 'f', value: 0.000 }
     };
 
     //
@@ -52,9 +52,9 @@ EARTH.Earth.prototype.setupEarth = function(){
 
     this.earthObject = new THREE.Mesh(this.geometry, this.shaderMaterial);
 
-    /*var gui = new dat.GUI();
-    gui.add(this.uniforms.uoffset, 'value', -0.0250, -0.0280).name('u offset').step(0.0001);
-    gui.add(this.uniforms.voffset, 'value', -0.0050, -0.0070).name('v offset').step(0.0001);
+ /*   var gui = new dat.GUI();
+    gui.add(this.uniforms.uoffset, 'value', -0.025, 0.025).name('u offset').step(0.001);
+    gui.add(this.uniforms.voffset, 'value', -0.007, 0.007).name('v offset').step(0.001);
     gui.add(this.uniforms.pickedindex, 'value', 0, 255).name('index').step(1);*/
 };
 

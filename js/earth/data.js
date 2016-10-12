@@ -1,5 +1,18 @@
 var EARTH = EARTH || {};
 
+EARTH.countryAvailable = {
+97: 3,
+150: 3,
+48: 6
+};
+
+EARTH.country = {
+    germany: "DE",
+    canada: "CA",
+    usa: "US",
+    france: "FR"
+}
+
 EARTH.countryName = {
 	"AF":"AFGHANISTAN",
 	"AX":"ÅLAND ISLANDS",
@@ -236,7 +249,7 @@ EARTH.countryName = {
 	"UA":"UKRAINE",
 	"AE":"UNITED ARAB EMIRATES",
 	"GB":"UNITED KINGDOM",
-	"US":"UNITED STATES",
+	"US":"USA",
 	"UM":"UNITED STATES MINOR OUTLYING ISLANDS",
 	"UY":"URUGUAY",
 	"UZ":"UZBEKISTAN",

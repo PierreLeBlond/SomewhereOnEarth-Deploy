@@ -6,6 +6,17 @@
     width: 40%;
 }
 
+#earth-nav .nav-link a {
+    color: #FEFEFE;
+}
+
+#earth-nav svg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: block;
+}
+
 #earth-section {
     display: block;
     height: 0;
