@@ -191,7 +191,8 @@ EARTH.Viewer.prototype.mousemove = function(event){
         this.savedTime = currentTime;
         if(index > 0)
         {
-            this.countryPopup.innerHTML = index + " : " + this.getCountryName(index);
+            this.countryPopup.innerHTML = this.getCountryName(index);
+            //this.countryPopup.innerHTML = index + " : " + this.getCountryName(index);
             this.countryPopup.style.display = "block";
             var left = (event.clientX + 10) + "px";
             this.countryPopup.style.left = left;
