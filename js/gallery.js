@@ -22,7 +22,7 @@ GALLERY.Image.prototype.build = function(){
 
 GALLERY.Image.prototype.setData = function(data){
 
-    var link = "http://res.cloudinary.com/somewhereonearth/image/upload/" +
+    var link = "http://res.cloudinary.com/somewhereonearth/image/upload/a_exif/" +
 	"v" + data.version + "/" + data.public_id + "." + data.format;
 
     this.link.href = link;

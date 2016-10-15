@@ -165,7 +165,7 @@ section h1:first-child {
 
 section {
     font-size: 10px;
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 
@@ -234,6 +234,11 @@ article .post {
     bottom: 0;
     right: 0;
     left: 0;
+}
+
+.item-frame svg {
+    fill: #FFFFFFBB;
+    stroke: none;
 }
 
 .item-frame {
@@ -305,6 +310,11 @@ article .post {
 
 aside {
     text-align: center;
+}
+
+#disqus-section {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 footer {
