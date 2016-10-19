@@ -175,7 +175,7 @@ article {
     margin: auto;
 }
 
-.article figure {
+article figure {
     position: relative;
     margin: auto;
     width: 100%;
@@ -184,9 +184,10 @@ article {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
+    height: 100%;
 }
 
-.article figure img {
+article figure img {
     position: relative;
     width: 40%;
     /*margin-top: 12%;
@@ -195,7 +196,7 @@ article {
     z-index: -1;
 }
 
-.article figure figcaption {
+article figure figcaption {
     position: relative;
     text-align: center;
     font: 0.7rem mark_my_words;
@@ -381,11 +382,11 @@ footer {
        }
 
 
-       #nav-wrap:hover nav#main-nav {
+       #nav-wrap:hover nav {
            height: 130px;
        }
 
-       nav#main-nav {
+       nav {
            background-color: #EEEEEE77;
            position: absolute;
            top: 100%;
