@@ -1,3 +1,11 @@
+#earth-logo:hover {
+    cursor: help;
+}
+
+#earth-logo {
+    z-index: 1000;
+}
+
 #earth-nav {
     display: none;
 }
@@ -8,6 +16,10 @@
 
 #earth-nav .nav-link a {
     color: #FEFEFE;
+}
+
+#earth-nav .nav-link a:hover {
+    color: #F06800;
 }
 
 #earth-nav svg {

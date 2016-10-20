@@ -1,6 +1,6 @@
 /* #C4C4C4
  * #D1BCD1
- *
+ * #F07C24
  * mark_my_words
  * Josefin Slab
  */
@@ -45,9 +45,9 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #000;
-  text-decoration: none;
-  outline: none;
+    color: #F06800;
+    text-decoration: none;
+    outline: none;
 }
 
 header {
@@ -104,6 +104,10 @@ header.night {
     top: 10px;
 }
 
+#main-title a:hover {
+    color: #F06800;
+}
+
 #main-title a h1 {
     margin-bottom: 0;
 }
@@ -153,6 +157,10 @@ nav ul li.nav-link a {
     color: #696969;
 }
 
+nav ul li.nav-link a:hover {
+    color: #F06800;
+}
+
 nav ul li.nav-dumb {
     display: inline-block;
     width: 20%;
@@ -173,6 +181,10 @@ article {
     font-size: 1rem;
     width: 80%;
     margin: auto;
+}
+
+article a {
+    color: #F07C24;
 }
 
 article figure {
@@ -339,7 +351,7 @@ footer {
     color: blue;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-device-width: 980px) {
 
     body {
         width: 100%;
@@ -350,7 +362,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 550px) {
+@media screen and (min-device-width: 0px) and (max-device-width: 550px) {
        .item-ratio {
            width: 47%;
        }
@@ -412,14 +424,14 @@ footer {
        }
 }
 
-@media screen and (min-width: 0px) and (max-width: 400px) {
+@media screen and (min-device-width: 0px) and (max-device-width: 400px) {
     #main-title {
         font-size: 0.4rem;
     }
 
 }
 
-@media screen and (min-width: 0px) and (max-width: 280px) {
+@media screen and (min-device-width: 0px) and (max-device-width: 280px) {
        .item-ratio {
            width: 97%;
        }
