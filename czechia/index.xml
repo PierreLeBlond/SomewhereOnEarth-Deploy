@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Czechia on Somewhere on Earth</title>
+    <link>https://www.somewhereonearth.xyz/czechia/</link>
+    <description>Recent content in Czechia on Somewhere on Earth</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Oct 2016 19:27:41 +0200</lastBuildDate>
+    <atom:link href="https://www.somewhereonearth.xyz/czechia/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Prague</title>
+      <link>https://www.somewhereonearth.xyz/czechia/prague/</link>
+      <pubDate>Fri, 28 Oct 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/czechia/prague/</guid>
+      <description>&lt;p&gt;Aoy !&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

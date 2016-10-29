@@ -158,27 +158,37 @@ EARTH.Viewer.prototype.mouseclick = function(event){
 EARTH.Viewer.prototype.pickCountry = function(index){
     this.earth.uniforms.pickedindex.value = index;
     var menu = EARTH.countryAvailable[index];
-    if(index > 0 && menu)
+    console.log(index);
+    if(index > 0)
     {
-        document.getElementById("earth-nav").style.display = "block";
+        var countryName = this.getCountryName(index).toLowerCase();
+        document.getElementById("country-name").innerHTML = countryName.charAt(0).toUpperCase() + countryName.slice(1);
+        if(menu)
+        {
+            document.getElementById("earth-ul").style.display = "block";
 
-        if(menu%2 == 0){
-            document.getElementById("post-link").href = "/" + this.getCountryName(index).toLowerCase() + "/";
-            document.getElementById("post-link").style.display = "inline-block";
-        }
-        else
-            document.getElementById("post-link").style.display = "none";
+            if(menu%2 == 0){
+                document.getElementById("post-link").href = "/" + countryName + "/";
+                document.getElementById("post-link").style.display = "inline-block";
+            }
+            else
+                document.getElementById("post-link").style.display = "none";
 
-        if(menu%3 == 0){
-            document.getElementById("gallery-link").href = "/gallery/" + this.getCountryName(index).toLowerCase() + "/";
-            document.getElementById("gallery-link").style.display = "inline-block";
+            if(menu%3 == 0){
+                document.getElementById("gallery-link").href = "/gallery/" + countryName + "/";
+                document.getElementById("gallery-link").style.display = "inline-block";
+            }
+            else
+                document.getElementById("gallery-link").style.display = "none";
+        }else{
+            document.getElementById("earth-ul").style.display = "none";
         }
-        else
-            document.getElementById("gallery-link").style.display = "none";
-    }else{
-        document.getElementById("earth-nav").style.display = "none";
     }
-
+    else
+    {
+        document.getElementById("earth-ul").style.display = "none";
+        document.getElementById("country-name").innerHTML = "";
+    }
 }
 
 EARTH.Viewer.prototype.mousemove = function(event){

@@ -1,16 +1,22 @@
 var EARTH = EARTH || {};
 
+EARTH.currentCountry = "austria";
+
 EARTH.countryAvailable = {
 97: 3,
 150: 3,
-48: 6
+48: 6,
+35: 3,
+67: 6
 };
 
 EARTH.country = {
     germany: "DE",
     canada: "CA",
     usa: "US",
-    france: "FR"
+    france: "FR",
+    austria: "AT",
+    czechia: "CZ"
 }
 
 EARTH.countryName = {

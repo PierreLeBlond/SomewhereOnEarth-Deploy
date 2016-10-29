@@ -1,25 +1,14 @@
 #earth-logo:hover {
-    cursor: help;
-}
-
-#earth-logo {
-    z-index: 1000;
+    cursor: url("/images/earth.png"), pointer;
 }
 
 #earth-nav {
     display: none;
+    bottom: 0px;
 }
 
 #earth-nav .nav-link {
     width: 40%;
-}
-
-#earth-nav .nav-link a {
-    color: #FEFEFE;
-}
-
-#earth-nav .nav-link a:hover {
-    color: #F06800;
 }
 
 #earth-nav svg {
@@ -27,6 +16,14 @@
     width: 100%;
     position: absolute;
     display: block;
+}
+
+#earth-nav h1 {
+    /*position: relative;
+    bottom: -50px;*/
+    text-align: center;
+    color: white;
+    font-size: 1rem;
 }
 
 #earth-section {
@@ -45,9 +42,11 @@
 }
 
 .countryPopup {
+    padding: 2px;
     display: none;
     position: fixed;
     color: white;
+    background-color: #000000;
     background-color: #10101077;
     font-size: 1rem;
     border: solid 2px white;

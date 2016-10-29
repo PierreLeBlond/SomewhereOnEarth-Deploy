@@ -10,6 +10,15 @@
     <atom:link href="https://www.somewhereonearth.xyz/country/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>czechia</title>
+      <link>https://www.somewhereonearth.xyz/country/czechia/</link>
+      <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/czechia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>germany</title>
       <link>https://www.somewhereonearth.xyz/country/germany/</link>
       <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>

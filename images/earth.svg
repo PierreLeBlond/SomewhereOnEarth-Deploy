@@ -15,7 +15,10 @@
    id="svg3344"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="earth.svg">
+   sodipodi:docname="earth.svg"
+   inkscape:export-filename="/home/pierre/Documents/Projects/Blog/around_the_world/static/images/earth.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs3346" />
   <sodipodi:namedview
@@ -26,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="-86.415141"
-     inkscape:cy="168.73753"
+     inkscape:cx="-42.843712"
+     inkscape:cy="225.88039"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -48,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

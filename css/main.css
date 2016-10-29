@@ -10,6 +10,12 @@
     src: url('/fonts/mark_my_words.otf');
 }
 
+@font-face {
+    font-family: lemon;
+    src: url('/fonts/Lemon Tuesday.otf');
+}
+
+
 /* reset */
 
 * {
@@ -18,6 +24,36 @@
 html {
     height: 100%;
     font-family: Josefin Slab, "Open Sans", sans-serif;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+    color: #F06800;
+    text-decoration: none;
+    outline: none;
+}
+
+/*
+ * Classes
+ */
+
+.script-font {
+    font-family: lemon, "Open Sans", sans-serif;
+}
+
+.funky-link {
+}
+
+.funky-link a {
+    color: #5344CC;
+}
+
+.funky-link a:hover {
+    color: #FFA265;
 }
 
 body {
@@ -39,17 +75,6 @@ body {
     transition: color 1s;
 }
 
-a {
-  color: #000000;
-  text-decoration: none;
-}
-
-a:hover, a:focus, a:active {
-    color: #F06800;
-    text-decoration: none;
-    outline: none;
-}
-
 header {
     position: fixed;
     width: 100%;
@@ -60,7 +85,7 @@ header {
 }
 
 header.day {
-    background: #EEEEEE77; /* For browsers that do not support gradients */
+    background: #EEEEEE; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#EEEEEEFF, #EEEEEEFF, #EEEEEEFF, #EEEEEE00); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#EEEEEEFF, #EEEEEEFF, #EEEEEEFF, #EEEEEE00); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#EEEEEEFF, #EEEEEEFF, #EEEEEEFF, #EEEEEE00); /* For Firefox 3.6 to 15 */
@@ -68,7 +93,7 @@ header.day {
 }
 
 header.night {
-    background: #00000077; /* For browsers that do not support gradients */
+    background: #000000; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#000000FF, #000000FF, #000000FF, #00000000); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#000000FF, #000000FF, #000000FF, #00000000); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#000000FF, #000000FF, #000000FF, #00000000); /* For Firefox 3.6 to 15 */
@@ -82,18 +107,17 @@ header.night {
 }
 
 #main-title {
-    font: 0.6rem mark_my_words, "Open Sans", sans-serif;
+    font-size: 0.6rem;
     background-color: inherit;
     position: absolute;
     width: 40%;
     margin: auto;
-    color: #636363;
     text-align: center;
-    top: 10px;
+    /*top: 10px;*/
 }
 
 #second-title {
-    font: 0.6rem mark_my_words, "Open Sans", sans-serif;
+    font-size: 0.6rem;
     background-color: inherit;
     position: absolute;
     width: 40%;
@@ -101,11 +125,7 @@ header.night {
     margin: auto;
     color: #636363;
     text-align: center;
-    top: 10px;
-}
-
-#main-title a:hover {
-    color: #F06800;
+    /*top: 10px;*/
 }
 
 #main-title a h1 {
@@ -138,7 +158,7 @@ nav {
     position: absolute;
     bottom: 50px;
     width: 100%;
-    font-family: mark_my_words;
+    /*z-index: -1;*/
 }
 
 nav ul {
@@ -153,14 +173,6 @@ nav ul li.nav-link {
     list-style-type: none;
 }
 
-nav ul li.nav-link a {
-    color: #696969;
-}
-
-nav ul li.nav-link a:hover {
-    color: #F06800;
-}
-
 nav ul li.nav-dumb {
     display: inline-block;
     width: 20%;
@@ -168,12 +180,11 @@ nav ul li.nav-dumb {
 
 section h1:first-child {
     text-align: center;
-    font-family: mark_my_words;
 }
 
 section {
     font-size: 10px;
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 50px;
 }
 
@@ -211,7 +222,7 @@ article figure img {
 article figure figcaption {
     position: relative;
     text-align: center;
-    font: 0.7rem mark_my_words;
+    font-size: 0.7rem;
 }
 
 article .article {
@@ -347,10 +358,6 @@ footer {
     font-size: 0.6rem;
 }
 
-#legal-notice a {
-    color: blue;
-}
-
 @media screen and (max-device-width: 980px) {
 
     body {
@@ -360,11 +367,19 @@ footer {
     #header-wrap {
         width: 100%;
     }
+
+    .item-title {
+        font-size: 3vw;
+    }
 }
 
 @media screen and (min-device-width: 0px) and (max-device-width: 550px) {
        .item-ratio {
            width: 47%;
+       }
+
+       .item-title {
+           font-size: 4vw;
        }
 
        #main-undertitle img.underline {
@@ -395,7 +410,7 @@ footer {
 
 
        #nav-wrap:hover nav {
-           height: 130px;
+           height: 170px;
        }
 
        nav {
@@ -435,4 +450,9 @@ footer {
        .item-ratio {
            width: 97%;
        }
+
+       .item-title {
+           font-size: 7vw;
+       }
 }
+
