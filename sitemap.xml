@@ -3,8 +3,13 @@
   
   <url>
     <loc>https://www.somewhereonearth.xyz/</loc>
-    <lastmod>2016-10-28T19:27:41+02:00</lastmod>
+    <lastmod>2016-11-01T11:24:09+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/slovakia/hitchhiking-01/</loc>
+    <lastmod>2016-11-01T11:24:09+01:00</lastmod>
   </url>
   
   <url>
@@ -34,6 +39,11 @@
   
   <url>
     <loc>https://www.somewhereonearth.xyz/country/germany/</loc>
+    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/slovakia/</loc>
     <lastmod>2016-08-28T19:27:41+02:00</lastmod>
   </url>
   
