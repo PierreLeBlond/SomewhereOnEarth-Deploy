@@ -176,7 +176,7 @@ void main(){
 vec4 height = texture2D(heightmap, uv + vec2(0.027, -0.006));
 uv_out = uv;
 vec3 newPosition = (1.0 + height.x*0.1) * position;
-vec4 pos = projectionMatrix*modelViewMatrix*vec4(newPosition, 1.0);
+vec4 pos = projectionMatrix*modelViewMatrix*vec4(position, 1.0);
 gl_Position = pos;
 }
 
@@ -236,6 +236,8 @@ gl_FragColor = color;
 <script src="https://www.somewhereonearth.xyz/js/earth/detector.js"></script>
 <script src="https://www.somewhereonearth.xyz/js/earth/viewer.js"></script>
 <script src="https://www.somewhereonearth.xyz/js/earth/earth.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/path.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/skybox.js"></script>
 <script src="https://www.somewhereonearth.xyz/js/earth/app.js"></script>
 
 

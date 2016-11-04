@@ -19,6 +19,12 @@ EARTH.Earth = function(){
     this.geometry                                   = new THREE.SphereGeometry(1, 64, 64 );
 
     this.earthObject                                = null;
+
+    this.hollowShader                               = new THREE.SpriteMaterial({
+        map: this.textureLoader.load("/images/earth/spark.png"),
+        size: 100.0
+    });
+    this.hollowObject                               = new THREE.Sprite(this.hollowShader);
 }
 
 /**

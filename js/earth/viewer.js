@@ -75,15 +75,15 @@ EARTH.Viewer.prototype.setupViewer = function(){
 
         //RENDERER PROPERTIES
         this.renderer = new THREE.WebGLRenderer({ alpha: true});
-	this.renderer.setClearColor(0x000000);
+        this.renderer.setClearColor(0x000000);
 
-	this.width = this.domElement.offsetWidth;
-	this.height = this.domElement.offsetHeight;
+        this.width = this.domElement.offsetWidth;
+        this.height = this.domElement.offsetHeight;
 
         this.renderTarget = new THREE.WebGLRenderTarget(this.width, this.height,
-                            { minFilter: THREE.NearestFilter,
-                                magFilter: THREE.NearestFilter,
-                                format: THREE.RGBAFormat });
+                                                        { minFilter: THREE.NearestFilter,
+                                                            magFilter: THREE.NearestFilter,
+                                                            format: THREE.RGBAFormat });
         this.detector = new EARTH.Detector();
         this.detector.setupDetector();
 
@@ -92,16 +92,16 @@ EARTH.Viewer.prototype.setupViewer = function(){
 
         this.resize(this.width, this.height, this.left, this.top);
 
-	//this.stats = new Stats();
-	//this.stats.setMode(0);
+        //this.stats = new Stats();
+        //this.stats.setMode(0);
         //document.body.appendChild( this.stats.dom );
 
-	this.controls = new THREE.OrbitControls( this.scene.camera, this.domElement, this.domElement);
-	this.controls.enablePan = false;
-	this.controls.rotateSpeed = 0.2;
-	this.controls.zoomSpeed = 0.5;
-	this.controls.minDistance = 1.01;
-	this.controls.maxDistance = 2.5;
+        this.controls = new THREE.OrbitControls( this.scene.camera, this.domElement, this.domElement);
+        this.controls.enablePan = false;
+        this.controls.rotateSpeed = 0.2;
+        this.controls.zoomSpeed = 0.5;
+        this.controls.minDistance = 1.01;
+        this.controls.maxDistance = 2.5;
         this.controls.enableDamping = true;
         this.controls.dampingFactor = 0.1;
 

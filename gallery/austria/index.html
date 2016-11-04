@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://www.somewhereonearth.xyz/css/earth.css"/>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Slab" />
     <link rel="shortcut icon" href="images/favicon.ico"/>
-    <title>Somewhere on Earth - Austria</title>
+    <title>Somewhere on Earth - Slovakia</title>
   </head>
   <body>
 
@@ -66,7 +66,7 @@
 
 
 
-<section country="austria">
+<section country="slovakia">
 
   <h1 id="title" class="light-switch script-font" ></h1>
 
@@ -75,8 +75,8 @@
     <article>
 
       <div class="gallery-content">
-        <h1 class="light-switch">Austria</h1>
-<div class="gallery" id="gallery-holder" country="austria" itemscope itemtype="http://schema.org/ImageGallery">
+        <h1 class="light-switch">Slovakia</h1>
+<div class="gallery" id="gallery-holder" country="slovakia" itemscope itemtype="http://schema.org/ImageGallery">
 
 
 </div>
@@ -170,7 +170,7 @@ void main(){
 vec4 height = texture2D(heightmap, uv + vec2(0.027, -0.006));
 uv_out = uv;
 vec3 newPosition = (1.0 + height.x*0.1) * position;
-vec4 pos = projectionMatrix*modelViewMatrix*vec4(newPosition, 1.0);
+vec4 pos = projectionMatrix*modelViewMatrix*vec4(position, 1.0);
 gl_Position = pos;
 }
 
@@ -230,6 +230,8 @@ gl_FragColor = color;
 <script src="https://www.somewhereonearth.xyz/js/earth/detector.js"></script>
 <script src="https://www.somewhereonearth.xyz/js/earth/viewer.js"></script>
 <script src="https://www.somewhereonearth.xyz/js/earth/earth.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/path.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/skybox.js"></script>
 <script src="https://www.somewhereonearth.xyz/js/earth/app.js"></script>
 
 

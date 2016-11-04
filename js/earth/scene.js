@@ -17,7 +17,6 @@ EARTH.Scene = function(){
     this.scene                              = null;
 
     this.camera                             = null;
-
 }
 
 /**
