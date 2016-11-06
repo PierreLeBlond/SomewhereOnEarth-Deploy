@@ -15,6 +15,9 @@
     src: url('/fonts/Lemon-Tuesday.otf');
 }
 
+@-moz-keyframes spin { 100% { -moz-transform: rotate(180deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(180deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
 
 /* reset */
 
@@ -69,6 +72,10 @@ body {
     z-index: -2;
 }
 
+body.night {
+    background-color: #000000;
+}
+
 .light-switch {
     color: #030303;
     -webkit-transition: color 1s; /* Safari */
@@ -103,10 +110,17 @@ header.night {
 #header-wrap {
     position: relative;
     width: 70%;
+    height: 120px;
     margin: auto;
+    background-color: inherit;
 }
 
-#main-title {
+
+.main-title.night {
+    color: #FFFFFF;
+}
+
+#first-title {
     font-size: 0.6rem;
     background-color: inherit;
     position: absolute;
@@ -128,8 +142,11 @@ header.night {
     /*top: 10px;*/
 }
 
-#main-title a h1 {
+#first-title a h1 {
     margin-bottom: 0;
+}
+
+#earth-logo {
 }
 
 #main-undertitle {
@@ -137,7 +154,6 @@ header.night {
     width: 100%;
     height: 70px;
     padding-top: 10px;
-    padding-bottom: 50px;
     margin: auto;
     text-align: center;
 }
@@ -154,10 +170,15 @@ header.night {
     width: 20%;
 }
 
+#nav-switch {
+    display: none;
+}
+
 nav {
     position: absolute;
-    bottom: 50px;
+    top: 50px;
     width: 100%;
+    height: auto;
     /*z-index: -1;*/
 }
 
@@ -374,74 +395,133 @@ footer {
 }
 
 @media screen and (min-device-width: 0px) and (max-device-width: 550px) {
-       .item-ratio {
-           width: 47%;
-       }
 
-       .item-title {
-           font-size: 4vw;
-       }
+    header.night {
+        background: #000000; /* For browsers that do not support gradients */
+    }
 
-       #main-undertitle img.underline {
-           display: none;
-       }
+    #header-wrap.night {
+        height: 80px;
+    }
 
-       #second-title {
-           display: none;
-       }
+    .main-title {
+        padding-top: 10px;
+    }
 
-       #nav-wrap {
-           width: 40%;
-           height: 60px;
-           position: absolute;
-           right: 0px;
-           top: 10%;
-           background-image: url("/images/menu.png");
-           background-size: contain;
-           background-repeat: no-repeat;
-           background-position: center;
-           text-align: center;
+    #earth-logo {
+        padding-bottom: 5px;
+    }
 
-       }
+    #main-undertitle {
+        position: static;
+        display: inline-block;
+        padding-bottom: 0;
+        height: 20px;
+    }
 
-       #main-title {
-           top:20px;
-       }
+    #main-undertitle img.underline {
+        display: none;
+    }
 
+    #main-undertitle img.earth {
+        height: 40px;
+    }
 
-       #nav-wrap:hover nav {
-           height: 170px;
-       }
+    #nav-switch {
+        display: block;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        background-color: #FFA265;
+    }
 
-       nav {
-           background-color: #EEEEEE77;
-           position: absolute;
-           top: 100%;
-           width: 100%;
-           height: 0px;
-           overflow: hidden;
-           transition: height 1s;
-       }
+    #nav-switch img {
+        height: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 
-       nav ul {
-           display: block;
-       }
+    #nav-wrap {
+        width: 100%;
+        display: block;
+    }
 
-       nav ul li.nav-link {
-           position: static;
-           display: block;
-           width: 100%;
-           margin-bottom: 10px;
-       }
+    #nav-wrap:hover nav {
+        height: 90px;
+    }
 
-       nav ul li.nav-link a {
-           text-overflow: clip;
-       }
+    #nav-wrap.night:hover nav {
+        height: 40px;
+    }
+
+    #nav-switch img {
+        transition: transform 1s;
+        transition: -moz-transform 1s;
+        transition: -webkit-transform 1s;
+    }
+
+    #nav-wrap:hover #nav-switch img {
+        transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+    }
+
+    nav {
+        background-color: #EEEEEE;
+        position: static;
+        display: block;
+        width: 100%;
+        /*position: absolute;
+        top: 100%;
+        width: 100%;*/
+        height: 0px;
+        overflow: hidden;
+        transition: height 1s;
+    }
+
+    nav.night {
+        background-color: #000000;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li.nav-dumb {
+        display: none;
+    }
+
+    nav ul li.nav-link {
+        position: static;
+        display: inline-block;
+        width: 49%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    nav ul li.nav-link a {
+        text-overflow: clip;
+    }
+
+    section {
+        padding-top: 100px;
+    }
+
+    .item-ratio {
+        width: 47%;
+    }
+
+    .item-title {
+        font-size: 4vw;
+    }
+
 }
 
 @media screen and (min-device-width: 0px) and (max-device-width: 400px) {
-    #main-title {
-        font-size: 0.4rem;
+    .main-title {
+        font-size: 0.8rem;
     }
 
 }

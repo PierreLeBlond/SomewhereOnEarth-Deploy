@@ -73,6 +73,7 @@ EARTH.App.prototype.setupApp = function(){
     this.viewer.scene.scene.add( this.path.pointCloud );
 
     this.skybox = new EARTH.Skybox;
+    this.skybox.setup();
     this.viewer.scene.scene.add( this.skybox.skyObject );
 
     this.viewer.scene.scene.add( this.viewer.scene.camera );
@@ -111,6 +112,12 @@ EARTH.App.prototype.toogleEarth = function(){
     }
 
     if(this.light){
+        var elements = document.getElementsByClassName("switch");
+        for(var i = 0; i < elements.length; i++)
+        {
+            elements[i].className = elements[i].className.replace("day","night");
+        }
+
         document.getElementById("main").style.display = "none";
         document.getElementById("title").style.display = "none";
         document.getElementById("earth-section").style.display = "block";
@@ -132,11 +139,16 @@ EARTH.App.prototype.toogleEarth = function(){
         document.getElementById("earth-logo").src = "/images/earth_neg.svg";
         document.getElementById("header").className = "night";
 
-        document.getElementsByTagName("body")[0].style.backgroundColor = "#030303";
         this.viewer.resize();
         this.viewer.render();
     }
     else{
+        var elements = document.getElementsByClassName("switch");
+        for(var i = 0; i < elements.length; i++)
+        {
+            elements[i].className = elements[i].className.replace("night","day");
+        }
+
         document.getElementById("earth-section").style.display = "none";
         document.getElementById("main").style.display = "block";
         document.getElementById("title").style.display = "block";
@@ -158,7 +170,6 @@ EARTH.App.prototype.toogleEarth = function(){
             imgs[i].src = "/images/undertitle_neg.svg";
         }
 
-        document.getElementsByTagName("body")[0].style.backgroundColor = "#EEEEEE";
         this.viewer.stop();
     }
     this.light = !this.light;

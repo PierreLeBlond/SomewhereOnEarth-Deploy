@@ -5,6 +5,7 @@ GALLERY.Image = function(){
     this.link = document.createElement("a");
     this.img = document.createElement("img");
     this.figcaption = document.createElement("figcaption");
+    this.date = null;
 }
 
 GALLERY.Image.prototype.build = function(){
@@ -36,6 +37,8 @@ GALLERY.Image.prototype.setData = function(data){
 
         this.figcaption.innerHTML += data.context.custom.caption;
     }
+
+    this.date = data.public_id;
 };
 
 // Using the config function
@@ -59,13 +62,22 @@ GALLERY.fetchPhotos = function(callback){
 
 GALLERY.buildGallery = function(data){
     console.log(data);
+    var imageArray = [];
     data.resources.forEach(function(photo)
                            {
                                var image = new GALLERY.Image();
                                image.build();
                                image.setData(photo);
-                               document.getElementById("gallery-holder").appendChild(image.figure);
+                               imageArray.push(image);
                            });
+    imageArray.sort(function(x, y){
+        return x.date.localeCompare(y.date);
+    });
+
+    imageArray.forEach(function(image)
+                       {
+                           document.getElementById("gallery-holder").appendChild(image.figure);
+                       });
 }
 
 GALLERY.fetchPhotos(GALLERY.buildGallery);

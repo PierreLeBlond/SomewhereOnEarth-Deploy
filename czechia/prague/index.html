@@ -9,18 +9,18 @@
     <link rel="shortcut icon" href="images/favicon.ico"/>
     <title>Somewhere on Earth - Prague</title>
   </head>
-  <body>
+  <body class="switch day">
 
     <header id="header" class="day">
 
-      <div id="header-wrap" class="script-font">
+      <div id="header-wrap" class="script-font switch day">
 
-        <div id="main-title">
-          <a href="https://www.somewhereonearth.xyz"><h1 class="light-switch" >Somewhere on Earth</h1></a>
+        <div id="first-title">
+          <a href="https://www.somewhereonearth.xyz"><h1 class="switch main-title day">Somewhere...</h1></a>
         </div>
 
         <div id="second-title">
-          <h1 class="light-switch" >Travel blog</h1>
+          <a href="https://www.somewhereonearth.xyz"><h1 class="switch main-title day" >...on Earth</h1></a>
         </div>
 
         <div id="main-undertitle">
@@ -29,9 +29,11 @@
           <img class="underline" alt="" src="https://www.somewhereonearth.xyz/images/undertitle_neg.svg">
         </div>
 
-        <div id="nav-wrap" class="funky-link">
+        <h1 id="country-name" class="switch day"></h1>
 
-          <nav id="main-nav">
+        <div id="nav-wrap" class="funky-link switch day">
+
+          <nav id="main-nav" class="switch day">
 
             <ul>
               <li class="nav-link"> <a href="https://www.somewhereonearth.xyz/article/about"> About </a> </li>
@@ -43,19 +45,21 @@
 
           </nav>
 
-          <nav id="earth-nav">
+          <nav id="earth-nav" class="switch day">
 
             <ul id="earth-ul">
-              <li class="nav-link"> <a id="post-link" href="https://www.somewhereonearth.xyz">
-                  
-                    Posts </a> </li>
+              <li class="nav-link"> <a id="post-link" href="https://www.somewhereonearth.xyz"> Posts </a> </li>
               <li class="nav-dumb"> </li>
               <li class="nav-link"> <a id="gallery-link" href="https://www.somewhereonearth.xyz"> Gallery </a> </li>
             </ul>
 
-            <h1 id="country-name"></h1>
+
 
           </nav>
+
+          <div id="nav-switch">
+            <img alt="" src="https://www.somewhereonearth.xyz/images/switch.svg">
+          </div>
 
         </div>
 
@@ -256,6 +260,31 @@ gl_FragColor = color;
 }
 
 </script>
+
+<script type="x-shader/x-vertex" id="skyboxVertexShader">
+
+varying vec3 uv_out;
+
+void main(){
+uv_out = position;
+gl_Position = projectionMatrix*modelViewMatrix*vec4(position, 1.0);
+}
+
+</script>
+
+<script type="x-shader/x-fragment" id="skyboxFragmentShader">
+
+uniform samplerCube envMap;
+
+varying vec3 uv_out;
+
+void main(){
+vec4 color = textureCube(map, uv_out);
+gl_FragColor = color;
+}
+
+</script>
+
 
 
 <script src="https://www.somewhereonearth.xyz/js/three.js"></script>

@@ -41,6 +41,18 @@
     z-index: -1;
 }
 
+#country-name.day {
+    display: none;
+    margin:0;
+}
+
+#country-name.night {
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+}
+
 .countryPopup {
     padding: 2px;
     display: none;
@@ -52,4 +64,11 @@
     border: solid 2px white;
     border-radius: 3px;
     text-align: center;
+}
+
+
+@media screen and (min-device-width: 0px) and (max-device-width: 550px) {
+    #earth-nav .nav-link {
+        width: 50%;
+    }
 }
