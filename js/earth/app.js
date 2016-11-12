@@ -124,20 +124,7 @@ EARTH.App.prototype.toogleEarth = function(){
         document.getElementById("main-nav").style.display = "none";
         document.getElementById("earth-nav").style.display = "block";
 
-        var divs = document.getElementsByClassName("light-switch");
-        for(var i = 0; i < divs.length; i++)
-        {
-            divs[i].style.color = "#EEEEEE";
-        }
-
-        var imgs = document.getElementsByClassName("underline");
-        for(var i = 0; i < imgs.length; i++)
-        {
-            imgs[i].src = "/images/undertitle.svg";
-        }
-
         document.getElementById("earth-logo").src = "/images/earth_neg.svg";
-        document.getElementById("header").className = "night";
 
         this.viewer.resize();
         this.viewer.render();
@@ -155,20 +142,7 @@ EARTH.App.prototype.toogleEarth = function(){
         document.getElementById("earth-nav").style.display = "none";
         document.getElementById("main-nav").style.display = "block";
 
-        var divs = document.getElementsByClassName("light-switch");
-        for(var i = 0; i < divs.length; i++)
-        {
-            divs[i].style.color = "#030303";
-        }
-
         document.getElementById("earth-logo").src = "/images/earth.svg";
-        document.getElementById("header").className = "day";
-
-        var imgs = document.getElementsByClassName("underline");
-        for(var i = 0; i < imgs.length; i++)
-        {
-            imgs[i].src = "/images/undertitle_neg.svg";
-        }
 
         this.viewer.stop();
     }

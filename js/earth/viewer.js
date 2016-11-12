@@ -113,10 +113,7 @@ EARTH.Viewer.prototype.setupViewer = function(){
         this.mouseClickEvent = this.mouseclick.bind(this);
         this.domElement.addEventListener( 'click', this.mouseClickEvent, false);
 
-        this.countryPopup = document.createElement("div");
-        this.countryPopup.className = "countryPopup";
-
-        this.domElement.appendChild(this.countryPopup);
+        this.countryPopup = document.getElementById("country-popup");
     }
 };
 
@@ -194,19 +191,19 @@ EARTH.Viewer.prototype.pickCountry = function(index){
 EARTH.Viewer.prototype.mousemove = function(event){
     var currentTime = new Date().getTime();
     var elapsedTime = currentTime - this.savedTime;
-    if(elapsedTime > 200)
+    if(elapsedTime > 20)
     {
         var index = this.getIndex(event.clientX, event.clientY);
         this.earth.uniforms.lookindex.value = index;
         this.savedTime = currentTime;
         if(index > 0)
         {
-            this.countryPopup.innerHTML = this.getCountryName(index);
+            document.getElementById("country-popup-name").innerHTML = this.getCountryName(index);
             //this.countryPopup.innerHTML = index + " : " + this.getCountryName(index);
             this.countryPopup.style.display = "block";
-            var left = (event.clientX + 10) + "px";
+            var left = event.clientX + "px";
             this.countryPopup.style.left = left;
-            var bottom = (this.height - event.clientY + 10) + "px";
+            var bottom = this.height - event.clientY + "px";
             this.countryPopup.style.bottom = bottom;
 
         }else{

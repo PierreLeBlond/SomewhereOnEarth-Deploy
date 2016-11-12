@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="153.49339mm"
+   height="20.417372mm"
+   viewBox="0 0 543.87423 72.345018"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-filename="/home/pierre/Documents/Projects/Blog/around_the_world/static/images/deco.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   sodipodi:docname="deco-right.svg">
+  <defs
+     id="defs4">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4138"
+       is_visible="true" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4156"
+       x="-0.0067281099"
+       width="1.0134562"
+       y="-0.055443097"
+       height="1.1108862">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.5044415"
+         id="feGaussianBlur4158" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="328.9834"
+     inkscape:cy="122.09173"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-144.00711,-453.55409)">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4156)"
+       d="m 185.86807,521.02197 c -9.48903,2.42194 -20.09133,-0.0496 -27.53121,-6.41798 -7.43987,-6.36834 -11.51749,-16.46242 -10.58845,-26.21149 0.69779,-7.32238 4.09885,-14.30533 9.2069,-19.59797 5.10805,-5.29264 11.86363,-8.90758 19.03531,-10.54199 10.74431,-2.4486 22.08945,-0.51013 32.43304,3.29066 10.34359,3.8008 19.91243,9.39592 29.65694,14.54184 108.37569,57.23153 240.82174,58.13094 357.31767,20.05948 30.58851,-9.99648 60.34784,-22.52888 88.87239,-37.42641"
+       id="path4136"
+       inkscape:path-effect="#path-effect4138"
+       inkscape:original-d="m 185.86807,521.02197 c 0,0 -38.54479,-5.92457 -38.11966,-32.62947 0.42513,-26.7049 -24.76832,-17.01664 28.24221,-30.13996 53.01052,-13.12331 -6.66458,-0.90802 62.08998,17.8325 68.75457,18.74053 309.78372,24.88807 357.31767,20.05948 47.53395,-4.8286 88.87239,-37.42641 88.87239,-37.42641"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="czzzzc" />
+  </g>
+</svg>

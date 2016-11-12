@@ -2,31 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
 
     <link rel="stylesheet" href="https://www.somewhereonearth.xyz/css/main.css"/>
     <link rel="stylesheet" href="https://www.somewhereonearth.xyz/css/earth.css"/>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Slab" />
-    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="shortcut icon" href="/images/favicon.ico"/>
     <title>Somewhere on Earth - Prague</title>
   </head>
   <body class="switch day">
 
-    <header id="header" class="day">
+    <div id="container">
+
+    <header id="header" class="switch day">
 
       <div id="header-wrap" class="script-font switch day">
 
-        <div id="first-title">
-          <a href="https://www.somewhereonearth.xyz"><h1 class="switch main-title day">Somewhere...</h1></a>
+        <div class="main-title switch day" id="first-title">
+          <a href="https://www.somewhereonearth.xyz"><h1 class="switch day">Somewhere...</h1></a>
         </div>
 
-        <div id="second-title">
-          <a href="https://www.somewhereonearth.xyz"><h1 class="switch main-title day" >...on Earth</h1></a>
+        <div class="main-title switch day" id="second-title">
+          <a href="https://www.somewhereonearth.xyz"><h1 class="switch day" >...on Earth</h1></a>
         </div>
 
         <div id="main-undertitle">
-          <img class="underline" alt="" src="https://www.somewhereonearth.xyz/images/undertitle_neg.svg">
-          <img id="earth-logo" class="earth" alt="" src="https://www.somewhereonearth.xyz/images/earth.svg">
-          <img class="underline" alt="" src="https://www.somewhereonearth.xyz/images/undertitle_neg.svg">
+          
+          <div id="earth-logo" class="earth" ><img alt="Earth has been destroyed" src="https://www.somewhereonearth.xyz/images/earth.svg"></div>
+          
         </div>
 
         <h1 id="country-name" class="switch day"></h1>
@@ -36,11 +39,10 @@
           <nav id="main-nav" class="switch day">
 
             <ul>
-              <li class="nav-link"> <a href="https://www.somewhereonearth.xyz/article/about"> About </a> </li>
-              <li class="nav-link"> <a href="https://www.somewhereonearth.xyz/article"> Articles </a> </li>
-              <li class="nav-dumb"> </li>
-              <li class="nav-link"> <a href="https://www.somewhereonearth.xyz/country"> Country </a> </li>
-              <li class="nav-link"> <a href="https://www.somewhereonearth.xyz/gallery"> Gallery </a> </li>
+              <li class="nav-link left-link"> <a href="https://www.somewhereonearth.xyz/article/about"> About </a> </li>
+              <li class="nav-link left-link"> <a href="https://www.somewhereonearth.xyz/article"> Articles </a> </li>
+              <li class="nav-link right-link"> <a href="https://www.somewhereonearth.xyz/gallery"> Gallery </a> </li>
+              <li class="nav-link right-link"> <a href="https://www.somewhereonearth.xyz/country"> Country </a> </li>
             </ul>
 
           </nav>
@@ -48,12 +50,9 @@
           <nav id="earth-nav" class="switch day">
 
             <ul id="earth-ul">
-              <li class="nav-link"> <a id="post-link" href="https://www.somewhereonearth.xyz"> Posts </a> </li>
-              <li class="nav-dumb"> </li>
-              <li class="nav-link"> <a id="gallery-link" href="https://www.somewhereonearth.xyz"> Gallery </a> </li>
+              <li class="nav-link left-link"> <a id="post-link" href="https://www.somewhereonearth.xyz"> Posts </a> </li>
+              <li class="nav-link right-link"> <a id="gallery-link" href="https://www.somewhereonearth.xyz"> Gallery </a> </li>
             </ul>
-
-
 
           </nav>
 
@@ -72,7 +71,7 @@
 
 <section country="czechia">
 
-  <h1 id="title" class="light-switch script-font" >Prague</h1>
+  <h1 id="title" class="script-font" >Prague</h1>
 
     <div id="main">
 
@@ -187,6 +186,13 @@ in a few days !</p>
 
   <div id="earth-section">
   <div id="earth-div">
+  </div>
+
+  <div id="country-popup">
+    <img alt="bubble" src="/images/earth/bubble.png"/>
+    <div id="text-wrap">
+      <h2 class="script-font" id="country-popup-name"></h2>
+    </div>
   </div>
 </div>
 
@@ -308,12 +314,14 @@ gl_FragColor = color;
 
 <footer>
 
-<div id="legal-notice">
-  <p class="light-switch"> Build with love by © Pierre Lespingal 2016 - pierre.lespingal@gmail.com </p>
-  <p class="light-switch funky-link">Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a><p>
-</div>
+  <div id="legal-notice">
+    <p class="light-switch"> Build with love by © Pierre Lespingal 2016 - pierre.lespingal@gmail.com </p>
+    <p class="light-switch funky-link">Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a></p>
+  </div>
 
 </footer>
+
+</div>
 
 </body>
 </html>

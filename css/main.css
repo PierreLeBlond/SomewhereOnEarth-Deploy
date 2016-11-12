@@ -15,6 +15,16 @@
     src: url('/fonts/Lemon-Tuesday.otf');
 }
 
+@font-face {
+    font-family: adventure;
+    src: url('/fonts/Adventure.otf');
+}
+
+@font-face {
+    font-family: optimus;
+    src: url('/fonts/OptimusPrincepsSemiBold.ttf');
+}
+
 @-moz-keyframes spin { 100% { -moz-transform: rotate(180deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(180deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
@@ -24,14 +34,29 @@
 * {
 }
 
-html {
+html, body {
     height: 100%;
+    width: 100%;
+    min-height: 100%;
     font-family: Josefin Slab, "Open Sans", sans-serif;
+    font-size: 1em;
+    margin = 0;
+    padding = 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
 }
 
 a {
   color: #000000;
   text-decoration: none;
+  margin: 0;
 }
 
 a:hover, a:focus, a:active {
@@ -44,8 +69,15 @@ a:hover, a:focus, a:active {
  * Classes
  */
 
+.day {
+    -webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
+    -webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+}
+
 .script-font {
-    font-family: lemon, "Open Sans", sans-serif;
+    font-family: optimus, "Open Sans", sans-serif;
 }
 
 .funky-link {
@@ -60,16 +92,17 @@ a:hover, a:focus, a:active {
 }
 
 body {
-    position: relative;
-    min-height: 100%;
     background-color: #EEEEEE;
-    -webkit-transition: background-color 1s; /* Safari */
-    transition: background-color 1s;
+    padding: 0;
     width: 70%;
     margin: auto;
-    font-size: 0;
-    /*box-sizing: border-box;*/
-    z-index: -2;
+}
+
+#container {
+    position: relative;
+    min-height: 100%; /* to achieve sticky footer */
+    padding: 0;
+    margin: 0;
 }
 
 body.night {
@@ -86,8 +119,8 @@ header {
     position: fixed;
     width: 100%;
     margin: auto;
-    top: 0;
     left: 0;
+    top: 0;
     z-index: 100;
 }
 
@@ -110,64 +143,69 @@ header.night {
 #header-wrap {
     position: relative;
     width: 70%;
-    height: 120px;
     margin: auto;
+    height: 120px;
+}
+
+.main-title {
+    font-size: 0.6em;
+    position: absolute;
     background-color: inherit;
+    width: 40%;
+    height: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: auto;
+    text-align: center;
+    border-bottom: dashed 2px grey;
+}
+
+.main-title.night {
+    border-bottom: dashed 2px white;
 }
 
 
-.main-title.night {
-    color: #FFFFFF;
+.main-title h1.night {
+    color: white;
 }
 
 #first-title {
-    font-size: 0.6rem;
-    background-color: inherit;
-    position: absolute;
-    width: 40%;
-    margin: auto;
-    text-align: center;
-    /*top: 10px;*/
+    left: 0;
 }
 
 #second-title {
-    font-size: 0.6rem;
-    background-color: inherit;
-    position: absolute;
-    width: 40%;
     right: 0;
-    margin: auto;
-    color: #636363;
-    text-align: center;
-    /*top: 10px;*/
-}
-
-#first-title a h1 {
-    margin-bottom: 0;
-}
-
-#earth-logo {
 }
 
 #main-undertitle {
-    display: inline-block;
-    width: 100%;
-    height: 70px;
-    padding-top: 10px;
-    margin: auto;
+    height: 66%;
     text-align: center;
+    padding-top: 0.5%;
+    margin: auto;
+    width: 100%;
 }
 
-#main-undertitle img.underline {
-    height: 70px;
+#main-undertitle div {
     display: inline-block;
-    width: 40%;
+    vertical-align: middle;
 }
 
-#main-undertitle img.earth {
-    height: 70px;
-    display: inline-block;
-    width: 20%;
+#main-undertitle img {
+    max-height: 100%;
+}
+
+#earth-logo {
+    z-index: 1000;
+}
+
+#main-undertitle .underline {
+    width: 43%;
+}
+
+#main-undertitle .earth {
+    float: center;
+    height: 100%;
+    max-width: 13%;
 }
 
 #nav-switch {
@@ -175,10 +213,12 @@ header.night {
 }
 
 nav {
-    font-size: 1.3rem;
     position: absolute;
-    top: 50px;
+    top: 35%;
     width: 100%;
+    height: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     /*z-index: -1;*/
 }
 
@@ -187,36 +227,62 @@ nav ul {
     margin: 0;
 }
 
-nav ul li.nav-link {
+.nav-link {
     display: inline-block;
     width: 19%;
     text-align: center;
     list-style-type: none;
 }
 
-nav ul li.nav-dumb {
-    display: inline-block;
-    width: 20%;
+.nav-link a {
+    color: #666666;
 }
 
-section h1:first-child {
-    text-align: center;
+#nav-wrap.night .nav-link a {
+    color: #EEEEEE;
+}
+
+.left-link {
+    float: left;
+}
+
+.right-link {
+    float: right;
 }
 
 section {
-    font-size: 1rem;
-    padding-top: 120px;
+    font-size: 1em;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 
+#title {
+    /*text-align: center;*/
+    color: #777777;
+    font-size: 1em;
+    border-bottom: dotted 2px grey;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: auto;
+    display: inline-block;
+}
+
 article {
-    font-size: 1rem;
-    width: 80%;
+    font-size: 1em;
+    width: 90%;
     margin: auto;
+    border-left: dotted 2px grey;
+    padding-left: 5%;
 }
 
 article a {
     color: #F07C24;
+}
+
+article h4 {
+    margin: 0;
+    padding-top: 2%;
 }
 
 article figure {
@@ -243,7 +309,7 @@ article figure img {
 article figure figcaption {
     position: relative;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 article .article {
@@ -264,7 +330,7 @@ article .post {
     width: 30%;
     margin-left: 1%;
     margin-right: 1%;
-    margin-top: 10px;
+    margin-top: 2%;
 }
 
 .item-ratio:before {
@@ -274,6 +340,7 @@ article .post {
 }
 
 .item {
+    font-family: lemon;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -358,16 +425,14 @@ aside {
 }
 
 #disqus-section {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 footer {
-    display: inline-block;
     width: 100%;
-    margin: auto;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     height: 50px;
 }
 
@@ -376,32 +441,50 @@ footer {
 }
 
 #legal-notice p {
-    font-size: 0.6rem;
+    font-size: 0.6em;
 }
 
 @media screen and (max-device-width: 980px) {
 
+
     body {
-        width: 100%;
+        width: 90%;
     }
 
     #header-wrap {
-        width: 100%;
+        width: 90%;
     }
-
     .item-title {
         font-size: 3vw;
     }
 }
 
-@media screen and (min-device-width: 0px) and (max-device-width: 550px) {
+@media screen and (max-device-width: 550px) {
+
+    body {
+        width: 100%;
+    }
 
     h1 {
         font-size: 4vw;
     }
 
-    .main-title {
+    .main-title h1 {
         font-size: 5vw;
+        vertical-align: middle;
+        height: 30%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .main-title {
+        border-bottom-style : none;
+        height: 50%;
+        padding: 0;
+    }
+
+    .main-title.night {
+        border-bottom-style : none;
     }
 
     header.night {
@@ -409,39 +492,34 @@ footer {
     }
 
     #header-wrap {
-        height: 20rem;
+        height: 8em;
+        width: 100%;
     }
 
     #header-wrap.night {
-        height: 17rem;
-    }
-
-    .main-title {
-        padding-top: 10px;
-    }
-
-    #earth-logo {
-        padding-bottom: 5px;
     }
 
     #main-undertitle {
         position: static;
         display: inline-block;
-        padding-bottom: 0;
-        height: 10rem;
+        padding: 0;
+        height: 50%;
+        vertical-align: middle;
     }
 
     #main-undertitle img.underline {
         display: none;
     }
 
-    #main-undertitle img.earth {
-        height: 9rem;
+    #main-undertitle .earth {
+        height: 90%;
+        padding-top: 0.5%;
     }
 
     #nav-switch {
         display: block;
         width: 100%;
+        height: 100%;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -450,22 +528,23 @@ footer {
     }
 
     #nav-switch img {
-        height: 10rem;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        height: 80%;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
 
     #nav-wrap {
         width: 100%;
+        height: 50%;
         display: block;
     }
 
-    #nav-wrap:hover nav {
-        height: 10rem;
+    #nav-wrap.day:hover nav {
+        height: 120%;
     }
 
     #nav-wrap.night:hover nav {
-        height: 5rem;
+        height: 60%;
     }
 
     #nav-switch img {
@@ -481,14 +560,11 @@ footer {
     }
 
     nav {
-        font-size: 3rem;
+        font-size: 1.6em;
         background-color: #EEEEEE;
         position: static;
         display: block;
         width: 100%;
-        /*position: absolute;
-        top: 100%;
-        width: 100%;*/
         height: 0px;
         overflow: hidden;
         transition: height 1s;
@@ -512,7 +588,7 @@ footer {
         display: inline-block;
         width: 49%;
         margin: auto;
-        margin-bottom: 10px;
+        margin-bottom: 1%;
     }
 
     nav ul li.nav-link a {
@@ -520,12 +596,15 @@ footer {
     }
 
     section {
-        padding-top: 20rem;
-        font-size: 2rem;
+        padding-top: 5em;
+        font-size: 2em;
     }
 
     .item-ratio {
         width: 47%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        margin-top: 2%;
     }
 
     .item-title {

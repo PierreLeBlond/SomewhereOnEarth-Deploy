@@ -1,6 +1,6 @@
 var EARTH = EARTH || {};
 
-EARTH.currentCountry = "slovakia";
+EARTH.currentCountry = "hungary";
 
 EARTH.countryAvailable = {
 97: 3,
@@ -8,7 +8,8 @@ EARTH.countryAvailable = {
 48: 6,
 35: 3,
 67: 6,
-133: 6
+133: 6,
+120: 3
 };
 
 EARTH.country = {
@@ -18,7 +19,8 @@ EARTH.country = {
     france: "FR",
     austria: "AT",
     czechia: "CZ",
-    slovakia: "SK"
+    slovakia: "SK",
+    hungary: "HU"
 }
 
 EARTH.countryName = {
