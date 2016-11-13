@@ -66,7 +66,6 @@ EARTH.Earth.prototype.setupEarth = function(){
 
 EARTH.Earth.prototype.computeIndex = function(index){
  /*   var image = tex.image;
-    console.log(tex);
 
     var canvas = document.createElement('canvas');
     canvas.width = image.width;

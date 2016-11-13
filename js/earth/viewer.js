@@ -155,7 +155,6 @@ EARTH.Viewer.prototype.mouseclick = function(event){
 EARTH.Viewer.prototype.pickCountry = function(index){
     this.earth.uniforms.pickedindex.value = index;
     var menu = EARTH.countryAvailable[index];
-    console.log(index);
     if(index > 0)
     {
         var countryName = this.getCountryName(index).toLowerCase();

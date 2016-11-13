@@ -83,7 +83,7 @@ EARTH.countryName = {
 	"CU":"CUBA",
 	"CW":"CURAÇAO",
 	"CY":"CYPRUS",
-	"CZ":"CZECH REPUBLIC",
+	"CZ":"CZECHIA",
 	"DK":"DENMARK",
 	"DJ":"DJIBOUTI",
 	"DM":"DOMINICA",

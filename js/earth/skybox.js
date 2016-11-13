@@ -14,14 +14,6 @@ EARTH.Skybox = function(){
 
     this.textureLoader                              = new THREE.TextureLoader();
 
-    this.uniforms = {
-        map: this.textureLoader.load( [ "/images/earth/Right_MauveSpaceBox.png",
-"/images/earth/Left_MauveSpaceBox.png","/images/earth/Up_MauveSpaceBox.png","/images/earth/Down_MauveSpaceBox.png",
-"/images/earth/Back_MauveSpaceBox.png","/images/earth/Front_MauveSpaceBox.png" ]
-                                      )
-    };
-
-
     this.skyGeometry                                = new THREE.CubeGeometry(100, 100, 100);
 /*    this.skyShader                                  = new THREE.ShaderMaterial({
         side:                                       THREE.DoubleSide,

@@ -38,7 +38,6 @@ EARTH.Path.prototype.setup = function(){
 
     for(country in EARTH.countryPos.countries)
     {
-        console.log(country);
         if(EARTH.countryAvailable[EARTH.countryColorMap[country]])
         {
             var lat = EARTH.countryPos.countries[country].lat;
