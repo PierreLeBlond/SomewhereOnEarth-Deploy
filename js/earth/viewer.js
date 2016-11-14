@@ -159,27 +159,28 @@ EARTH.Viewer.prototype.pickCountry = function(index){
     {
         var countryName = this.getCountryName(index).toLowerCase();
         document.getElementById("country-name").innerHTML = countryName.charAt(0).toUpperCase() + countryName.slice(1);
-        if(menu)
+        if(menu%2 == 0){
+            document.getElementById("post-link").href = "/" + countryName + "/";
+            document.getElementById("post-link").style.color = "white";
+            document.getElementById("post-link").style.pointerEvents = "default";
+        }
+        else
         {
-            if(menu%2 == 0){
-                document.getElementById("post-link").href = "/" + countryName + "/";
-            }
-            else
-            {
-                document.getElementById("post-link").href = "#";
-                document.getElementById("post-link").style.color = "#666666";
-                document.getElementById("post-link").style.pointerEvents = "none";
-            }
+            document.getElementById("post-link").href = "#";
+            document.getElementById("post-link").style.color = "#666666";
+            document.getElementById("post-link").style.pointerEvents = "none";
+        }
 
-            if(menu%3 == 0){
-                document.getElementById("gallery-link").href = "/gallery/" + countryName + "/";
-            }
-            else
-            {
-                document.getElementById("gallery-link").href = "#";
-                document.getElementById("gallery-link").style.color = "#666666";
-                document.getElementById("gallery-link").style.pointerEvents = "none";
-            }
+        if(menu%3 == 0){
+            document.getElementById("gallery-link").href = "/gallery/" + countryName + "/";
+            document.getElementById("gallery-link").style.color = "white";
+            document.getElementById("gallery-link").style.pointerEvents = "default";
+        }
+        else
+        {
+            document.getElementById("gallery-link").href = "#";
+            document.getElementById("gallery-link").style.color = "#666666";
+            document.getElementById("gallery-link").style.pointerEvents = "none";
         }
     }
     else
