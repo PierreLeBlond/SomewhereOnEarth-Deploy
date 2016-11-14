@@ -223,11 +223,16 @@ nav {
 }
 
 nav ul {
+    display: block;
+    position: relative;
     padding: 0;
     margin: 0;
+    height: auto;
+    width: auto;
 }
 
 .nav-link {
+    position: relative;
     display: inline-block;
     width: 19%;
     text-align: center;
@@ -451,9 +456,7 @@ footer.night {
     font-size: 0.6em;
 }
 
-@media screen and (max-device-width: 980px) {
-
-
+@media screen and (max-device-width: 980px), screen and (max-width: 980px) {
     body {
         width: 90%;
     }
@@ -466,7 +469,7 @@ footer.night {
     }
 }
 
-@media screen and (max-device-width: 550px) {
+@media screen and (max-device-width: 550px), screen and (max-width: 550px) {
 
     body {
         width: 100%;
@@ -492,12 +495,8 @@ footer.night {
         border-bottom-style : none;
     }
 
-    header.night {
-        background: #000000; /* For browsers that do not support gradients */
-    }
-
     #header-wrap {
-        height: 8em;
+        height: 6em;
         width: 100%;
     }
 
@@ -520,58 +519,76 @@ footer.night {
     }
 
     #nav-switch {
+        transition: right 1s ease;
+        position: relative;
         display: block;
-        width: 100%;
-        height: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        text-align: center;
+        right: 100%;
+        width: 110%;
+        height: 2em;
         background-color: #FFA265;
+        border-radius: 2px;
+    }
+
+    #nav-switch.expanded {
+        right: 10%;
+    }
+
+    #nav-switch .img-wrapper {
+        height: 100%;
+        position: relative;
+        float: right;
     }
 
     #nav-switch img {
-        height: 80%;
-        padding-top: 2%;
-        padding-bottom: 2%;
+        height: 100%;
     }
 
     #nav-wrap {
         width: 100%;
-        height: 50%;
         display: block;
     }
 
+    #nav-wrap.day nav {
+        transition: right 1s ease;
+    }
+
+    #nav-wrap.night nav {
+        transition: right 1s ease;
+    }
+/*
     #nav-wrap.day:hover nav {
-        height: 120%;
+        max-height: 80px;
     }
 
     #nav-wrap.night:hover nav {
-        height: 60%;
-    }
+        max-height: 80px;
+    }*/
 
     #nav-switch img {
         transition: transform 1s;
         transition: -moz-transform 1s;
         transition: -webkit-transform 1s;
+        transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
     }
 
-    #nav-wrap:hover #nav-switch img {
-        transform: rotate(-180deg);
-        -moz-transform: rotate(-180deg);
-        -webkit-transform: rotate(-180deg);
+    #nav-switch.expanded img {
+        transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
     }
 
     nav {
         font-size: 1.6em;
         background-color: #EEEEEE;
-        position: static;
+        position: absolute;
         display: block;
         width: 100%;
-        height: 0px;
+        height: auto;
         overflow: hidden;
-        transition: height 1s;
-        top: 4em;
+        top: 6rem;
+        right: 100%;
         padding: 0;
     }
 
@@ -584,7 +601,7 @@ footer.night {
         margin-top: 0;
     }
 
-    nav ul li.nav-link {
+    .nav-link {
         position: static;
         display: inline-block;
         width: 49%;
@@ -592,20 +609,20 @@ footer.night {
         margin-bottom: 1%;
     }
 
-    nav ul li.nav-link a {
+    .nav-link a {
         text-overflow: clip;
     }
 
     section {
-        padding-top: 4em;
-        padding-bottom: 2em;
-        font-size: 2em;
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+        font-size: 1rem;
         width: 90%;
         margin: auto;
     }
 
     #title {
-        font-size: 0.6em;
+        font-size: 1.2em;
     }
 
     .item-ratio {
@@ -628,18 +645,9 @@ footer.night {
     }
 }
 
-@media screen and (min-device-width: 0px) and (max-device-width: 280px) {
+@media screen and (max-device-width: 280px), screen and (max-width: 280px) {
 
-
-    #nav-wrap.day:hover nav {
-        height: 240%;
-    }
-
-    #nav-wrap.night:hover nav {
-        height: 120%;
-    }
-
-    nav ul li.nav-link {
+    .nav-link {
         width: 100%;
     }
 
@@ -649,6 +657,10 @@ footer.night {
 
     .item-title {
         font-size: 7vw;
+    }
+
+    #earth-logo {
+        background-size: auto 60%;
     }
 }
 

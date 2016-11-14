@@ -3,21 +3,13 @@
 }
 
 #earth-nav {
+    background-color: #000000;
     display: none;
-    bottom: 0px;
+    top: 7.2rem;
 }
 
 #earth-nav.night {
     display: block;
-}
-
-#earth-nav .nav-link {
-    width: 40%;
-}
-
-#earth-nav.night a {
-    text-align: center;
-    font-size: 1rem;
 }
 
 #earth-section {
@@ -47,6 +39,7 @@
 #country-name {
     display: block;
     font-size: 1em;
+    height: 1.2rem;
     color: #FFFFFF;
     text-align: center;
     margin: 0;
@@ -63,10 +56,9 @@
     pointer-events: none;
 }
 
-#header-wrap:focus #country-popup {
+#nav-switch:hover #country-popup {
     display: none;
 }
-
 
 #country-popup img {
     position: absolute;
@@ -84,9 +76,6 @@
 }
 
 @media screen and (min-device-width: 0px) and (max-device-width: 550px) {
-    #earth-nav .nav-link {
-        width: 49%;
-    }
 
     #country-name.night {
         font-size: 1em;

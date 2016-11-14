@@ -161,29 +161,30 @@ EARTH.Viewer.prototype.pickCountry = function(index){
         document.getElementById("country-name").innerHTML = countryName.charAt(0).toUpperCase() + countryName.slice(1);
         if(menu)
         {
-            document.getElementById("earth-ul").style.display = "block";
-
             if(menu%2 == 0){
                 document.getElementById("post-link").href = "/" + countryName + "/";
-                document.getElementById("post-link").style.display = "inline-block";
             }
             else
-                document.getElementById("post-link").style.display = "none";
+            {
+                document.getElementById("post-link").href = "#";
+                document.getElementById("post-link").style.color = "#666666";
+                document.getElementById("post-link").style.pointerEvents = "none";
+            }
 
             if(menu%3 == 0){
                 document.getElementById("gallery-link").href = "/gallery/" + countryName + "/";
-                document.getElementById("gallery-link").style.display = "inline-block";
             }
             else
-                document.getElementById("gallery-link").style.display = "none";
-        }else{
-            document.getElementById("earth-ul").style.display = "none";
+            {
+                document.getElementById("gallery-link").href = "#";
+                document.getElementById("gallery-link").style.color = "#666666";
+                document.getElementById("gallery-link").style.pointerEvents = "none";
+            }
         }
     }
     else
     {
-        document.getElementById("earth-ul").style.display = "none";
-        document.getElementById("country-name").innerHTML = "";
+        document.getElementById("country-name").innerHTML = "Select a country";
     }
 }
 
@@ -197,13 +198,13 @@ EARTH.Viewer.prototype.mousemove = function(event){
         this.savedTime = currentTime;
         if(index > 0)
         {
-            document.getElementById("country-popup-name").innerHTML = this.getCountryName(index);
+            /*document.getElementById("country-popup-name").innerHTML = this.getCountryName(index);
             //this.countryPopup.innerHTML = index + " : " + this.getCountryName(index);
             this.countryPopup.style.display = "block";
             var left = event.clientX + "px";
             this.countryPopup.style.left = left;
             var bottom = this.height - event.clientY + "px";
-            this.countryPopup.style.bottom = bottom;
+            this.countryPopup.style.bottom = bottom;*/
 
         }else{
             this.countryPopup.style.display = "none";

@@ -14,6 +14,7 @@ var EARTH = EARTH || {};
  */
 EARTH.App = function(){
     this.day                              = true;
+    this.menuCollapsed                    = true;
     this.isReady                            = false;
     this.viewer                             = null;
     this.earth                              = null;
@@ -131,6 +132,27 @@ EARTH.App.prototype.toogleEarth = function(){
     this.day = !this.day;
 }
 
+EARTH.App.prototype.toogleMenu = function(navSwitch){
+    navs = document.getElementsByTagName("nav");
+    if(this.menuCollapsed)
+    {
+        for(var i = 0; i < navs.length; i++)
+        {
+            navs[i].style.right = "0px";
+        }
+        navSwitch.className = "expanded";
+    }
+    else
+    {
+        for(var i = 0; i < navs.length; i++)
+        {
+            navs[i].style.right = "100%";
+        }
+        navSwitch.className = "";
+    }
+    this.menuCollapsed = !this.menuCollapsed;
+}
+
 var app = new EARTH.App();
 var domElement = document.getElementById('earth-div');
 var width = "\"" + window.innerWidth + "px\"";
@@ -139,3 +161,5 @@ var height = "\"" + window.innerHeight + "px\"";
 domElement.style.height = height;
 app.setDomElement(domElement);
 document.getElementById("earth-logo").onclick = function(){app.toogleEarth();};
+var navSwitch = document.getElementById("nav-switch");
+navSwitch.onclick = function(){app.toogleMenu(navSwitch);};
