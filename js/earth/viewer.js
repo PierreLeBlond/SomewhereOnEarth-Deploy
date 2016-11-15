@@ -162,7 +162,7 @@ EARTH.Viewer.prototype.pickCountry = function(index){
         if(menu%2 == 0){
             document.getElementById("post-link").href = "/" + countryName + "/";
             document.getElementById("post-link").style.color = "white";
-            document.getElementById("post-link").style.pointerEvents = "default";
+            document.getElementById("post-link").style.pointerEvents = "auto";
         }
         else
         {
@@ -174,7 +174,7 @@ EARTH.Viewer.prototype.pickCountry = function(index){
         if(menu%3 == 0){
             document.getElementById("gallery-link").href = "/gallery/" + countryName + "/";
             document.getElementById("gallery-link").style.color = "white";
-            document.getElementById("gallery-link").style.pointerEvents = "default";
+            document.getElementById("gallery-link").style.pointerEvents = "auto";
         }
         else
         {
