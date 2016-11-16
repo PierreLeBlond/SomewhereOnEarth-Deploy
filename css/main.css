@@ -100,11 +100,18 @@ body {
     margin: auto;
 }
 
+#background {
+    display: none;
+}
+
+
 #container {
+    background-color: #EEEEEE;
     position: relative;
     min-height: 100%; /* to achieve sticky footer */
     padding: 0;
     margin: 0;
+    box-shadow: 0px 0px 10px 10px rgb(238,238,238);
 }
 
 body.night {
@@ -259,6 +266,7 @@ section {
     font-size: 1em;
     padding-top: 7em;
     padding-bottom: 4em;
+    padding-left: 1%;
 }
 
 #main.night {
@@ -312,7 +320,6 @@ article figure img {
     /*margin-top: 12%;
     margin-bottom: 20%;*/
     height: auto;
-    z-index: -1;
 }
 
 article figure figcaption {
@@ -456,6 +463,29 @@ footer.night {
     font-size: 0.6em;
 }
 
+@media screen and (min-device-width: 980px) and (min-width: 980px) {
+
+    header.day {
+        width: 70%;
+        left: 15%;
+    }
+
+    #background.day {
+        display: block;
+        background-image: url(/images/background.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% auto;
+        text-align: center;
+        position: fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
 @media screen and (max-device-width: 980px), screen and (max-width: 980px) {
     body {
         width: 90%;
@@ -464,8 +494,9 @@ footer.night {
     #header-wrap {
         width: 90%;
     }
+
     .item-title {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 }
 
