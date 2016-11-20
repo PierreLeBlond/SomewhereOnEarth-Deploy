@@ -20,11 +20,10 @@ EARTH.Earth = function(){
 
     this.earthObject                                = null;
 
-    this.hollowShader                               = new THREE.SpriteMaterial({
-        map: this.textureLoader.load("/images/earth/spark.png"),
-        size: 100.0
-    });
-    this.hollowObject                               = new THREE.Sprite(this.hollowShader);
+    this.earthGhostObject                           = new THREE.Mesh(new THREE.SphereGeometry(1, 64, 64),
+                                                                     new THREE.MeshBasicMaterial({
+                                                                         color: 0x000000
+                                                                     }));
 }
 
 /**
@@ -40,11 +39,14 @@ EARTH.Earth.prototype.setupEarth = function(){
     this.uniforms = {
         map:{ type: 't', value: this.textureLoader.load("/images/earth/earth_map.png")},
         indexmap: { type: 't', value: indexMap},
+        blurmap: { type: 't', value: null},
         heightmap: { type: 't', value: this.textureLoader.load("/images/earth/earth_height_map_med.jpg")},
         lookindex: { type: 'i', value: 5 },
         pickedindex: { type: 'i', value: 5 },
         uoffset:{ type: 'f', value: 0.000 },
-        voffset:{ type: 'f', value: 0.000 }
+        voffset:{ type: 'f', value: 0.000 },
+        sunPosition:{ type: 'vec3', value: null },
+        sunColor: { type: 'vec3', value: new THREE.Vector3(255, 186, 98)}
     };
 
     //

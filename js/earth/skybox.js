@@ -12,16 +12,13 @@ var EARTH = EARTH || {};
  */
 EARTH.Skybox = function(){
 
-    this.textureLoader                              = new THREE.TextureLoader();
+    this.textureLoader                              = new THREE.CubeTextureLoader();
 
-    this.skyGeometry                                = new THREE.CubeGeometry(100, 100, 100);
-/*    this.skyShader                                  = new THREE.ShaderMaterial({
-        side:                                       THREE.DoubleSide,
-        uniforms:                                   this.uniforms,
-        vertexShader:                               document.getElementById( 'skyboxVertexShader' ).textContent,
-        fragmentShader:                             document.getElementById( 'skyboxFragmentShader' ).textContent
-    });*/
+    this.uniforms                                   = {
+        envMap: {type : "t", value: null}
+    };
 
+    this.skyGeometry                                = new THREE.CubeGeometry(1, 1, 1);
     this.skyShader                                  = null;
     this.skyObject                                  = null;
 };
@@ -35,14 +32,19 @@ EARTH.Skybox.prototype.setup = function(){
     //var directions = ["Right", "Left", "Up", "Down", "Back", "Front"];
     var directions = ["bk", "dn", "fr", "lf", "rt", "up"];
 
-    var materialArray = [];
-    for (var i = 0; i < 6; i++)
-        materialArray.push( new THREE.MeshBasicMaterial({
-            map: this.textureLoader.load( prefix + suffixe + directions[i] + extend ),
-            side: THREE.BackSide
-        }));
+    var textures = [];
+    for (var i = 0; i < 6; i++){
+        textures.push(prefix + suffixe + directions[i] + extend );
+    }
 
-    this.skyShader = new THREE.MeshFaceMaterial( materialArray );
+    this.uniforms.envMap.value = this.textureLoader.load(textures);
+    this.skyShader =  new THREE.ShaderMaterial({
+        side:                                       THREE.DoubleSide,
+        uniforms:                                   this.uniforms,
+        vertexShader:                               document.getElementById( 'skyboxVertexShader' ).textContent,
+        fragmentShader:                             document.getElementById( 'skyboxFragmentShader' ).textContent
+    });
+
     this.skyObject =  new THREE.Mesh(this.skyGeometry, this.skyShader);
 
     this.skyObject.rotation.y += Math.PI / 2;

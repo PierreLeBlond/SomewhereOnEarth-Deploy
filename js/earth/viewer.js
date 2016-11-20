@@ -21,11 +21,9 @@ EARTH.Viewer = function(){
 
     this.savedTime                                  = new Date().getTime();
 
-    this.scene                                      = null;
-    this.renderer                                   = null;
+    this.blur                                       = null;
     this.renderTarget                               = null;
     this.detector                                   = null;
-    this.earth                                      = null;
 
     this.renderId                                   = null;
 
@@ -47,14 +45,6 @@ EARTH.Viewer = function(){
 }
 
 /**
- * Set the scene
- * @param {Earth.scene} scene - The scene
- */
-EARTH.Viewer.prototype.setScene = function(scene){
-    this.scene = scene;
-}
-
-/**
  * Set the DomElement attribute
  * @param {Node} el - The dom element
  */
@@ -69,13 +59,11 @@ EARTH.Viewer.prototype.setupViewer = function(){
 
     if(!this.domElement) {
         console.log("Error : View does not have a dom element");
-    }else if(!this.scene) {
-        console.log("Error : View does not have a scene");
     }else{
 
         //RENDERER PROPERTIES
         this.renderer = new THREE.WebGLRenderer({ alpha: true});
-        this.renderer.setClearColor(0x000000);
+        this.renderer.setClearColor(0x00000000);
 
         this.width = this.domElement.offsetWidth;
         this.height = this.domElement.offsetHeight;
@@ -90,18 +78,23 @@ EARTH.Viewer.prototype.setupViewer = function(){
         this.renderer.setSize(this.width, this.height);
         this.domElement.appendChild( this.renderer.domElement );
 
+        this.blur = new EARTH.Blur();
+        this.blur.renderer = this.renderer;
+        this.blur.setup();
+
         this.resize(this.width, this.height, this.left, this.top);
 
         //this.stats = new Stats();
         //this.stats.setMode(0);
         //document.body.appendChild( this.stats.dom );
 
-        this.controls = new THREE.OrbitControls( this.scene.camera, this.domElement, this.domElement);
+
+        this.controls = new THREE.OrbitControls( this.blur.scene.camera, this.domElement, this.domElement);
         this.controls.enablePan = false;
         this.controls.rotateSpeed = 0.2;
         this.controls.zoomSpeed = 0.5;
         this.controls.minDistance = 1.01;
-        this.controls.maxDistance = 2.5;
+        //this.controls.maxDistance = 2.5;
         this.controls.enableDamping = true;
         this.controls.dampingFactor = 0.1;
 
@@ -135,12 +128,38 @@ EARTH.Viewer.prototype.render = function(){
 
     this.animate();
 
+    var sunPos3D = new THREE.Vector4();
+    sunPos3D.copy(this.blur.scene.sun.sunObject.position);
+    var sunVp = new THREE.Matrix4();
+    sunVp.multiply(this.blur.scene.camera.projectionMatrix);
+    sunVp.multiply(this.blur.scene.camera.matrixWorldInverse);
+    sunPos3D.applyMatrix4(sunVp);
+    var xSun = (sunPos3D.x/sunPos3D.w + 1.0)/2.0;
+    xSun = Math.min(Math.max(xSun, 0.0), 1.0);
+    var ySun = (sunPos3D.y/sunPos3D.w + 1.0)/2.0;
+    ySun = Math.min(Math.max(ySun, 0.0), 1.0);
+
+    this.blur.object.material.uniforms.sunPos.value = new THREE.Vector2(xSun, ySun);
+
+    var earthPos3D = new THREE.Vector4();
+    earthPos3D.copy(this.blur.scene.earth.earthObject.position);
+    var earthVp = new THREE.Matrix4();
+    earthVp.multiply(this.blur.scene.camera.projectionMatrix);
+    earthVp.multiply(this.blur.scene.camera.matrixWorldInverse);
+    earthPos3D.applyMatrix4(earthVp);
+    var xEarth = (earthPos3D.x/earthPos3D.w + 1.0)/2.0;
+    xEarth = Math.min(Math.max(xEarth, 0.0), 1.0);
+    var yEarth = (earthPos3D.y/earthPos3D.w + 1.0)/2.0;
+    yEarth = Math.min(Math.max(yEarth, 0.0), 1.0);
+
+    this.blur.object.material.uniforms.earthPos.value = new THREE.Vector2(0.5, 0.5);
+
     if(this.stats)
         this.stats.update();
     this.controls.update();
+    this.blur.scene.skybox.skyObject.position.copy(this.blur.scene.camera.position);
 
-    this.renderer.render(this.scene.scene, this.scene.camera);
-
+    this.blur.render();
 };
 
 EARTH.Viewer.prototype.stop = function(){
@@ -153,7 +172,7 @@ EARTH.Viewer.prototype.mouseclick = function(event){
 }
 
 EARTH.Viewer.prototype.pickCountry = function(index){
-    this.earth.uniforms.pickedindex.value = index;
+    this.blur.scene.earth.uniforms.pickedindex.value = index;
     var menu = EARTH.countryAvailable[index];
     if(index > 0)
     {
@@ -195,7 +214,7 @@ EARTH.Viewer.prototype.mousemove = function(event){
     if(elapsedTime > 20)
     {
         var index = this.getIndex(event.clientX, event.clientY);
-        this.earth.uniforms.lookindex.value = index;
+        this.blur.scene.earth.uniforms.lookindex.value = index;
         this.savedTime = currentTime;
         if(index > 0)
         {
@@ -218,7 +237,7 @@ EARTH.Viewer.prototype.getIndex = function(x, y){
     this.renderTarget.width = this.width;
     this.renderTarget.height = this.height;
 
-    this.renderer.render(this.detector.scene, this.scene.camera, this.renderTarget);
+    this.renderer.render(this.detector.scene, this.blur.scene.camera, this.renderTarget);
 
     var buffer = new Uint8Array( this.renderTarget.width * this.renderTarget.height * 4);
 
@@ -246,8 +265,11 @@ EARTH.Viewer.prototype.resize = function(){
     this.width = this.domElement.offsetWidth;
     this.height = this.domElement.offsetHeight;
 
-    this.scene.camera.aspect = this.width / this.height;
-    this.scene.camera.updateProjectionMatrix();
+    this.blur.width = this.domElement.offsetWidth;
+    this.blur.height = this.domElement.offsetHeight;
+
+    this.blur.scene.camera.aspect = this.width / this.height;
+    this.blur.scene.camera.updateProjectionMatrix();
 
     this.renderer.setSize( this.width, this.height );
 
@@ -255,5 +277,11 @@ EARTH.Viewer.prototype.resize = function(){
                                                     { minFilter: THREE.NearestFilter,
                                                         magFilter: THREE.NearestFilter,
                                                         format: THREE.RGBAFormat });
+
+    this.blur.renderTarget = new THREE.WebGLRenderTarget(this.width, this.height,
+                                                    {format: THREE.RGBAFormat });
+
+    this.blur.ghostRenderTarget = new THREE.WebGLRenderTarget(this.width, this.height,
+                                                    {format: THREE.RGBAFormat });
 };
 

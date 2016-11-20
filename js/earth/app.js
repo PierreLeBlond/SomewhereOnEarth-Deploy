@@ -16,10 +16,8 @@ EARTH.App = function(){
     this.day                              = true;
     this.menuCollapsed                    = true;
     this.isReady                            = false;
+
     this.viewer                             = null;
-    this.earth                              = null;
-    this.path                               = null;
-    this.skybox                             = null;
     this.windowResizeEvent                  = null;
 
     this.lat                                = 0;
@@ -41,8 +39,8 @@ EARTH.App.prototype.focus = function(lat, lon){
 
     var r = 2;
 
-    this.viewer.scene.camera.position.set(r*Math.cos(theta)*Math.sin(phi), r*Math.cos(phi), r*Math.sin(theta)*Math.sin(phi));
-    this.viewer.scene.camera.lookAt(new THREE.Vector3(0, 0, 0));
+    this.viewer.blur.scene.camera.position.set(r*Math.cos(theta)*Math.sin(phi), r*Math.cos(phi), r*Math.sin(theta)*Math.sin(phi));
+    this.viewer.blur.scene.camera.lookAt(new THREE.Vector3(0, 0, 0));
 };
 
 
@@ -51,35 +49,11 @@ EARTH.App.prototype.focus = function(lat, lon){
  *   */
 EARTH.App.prototype.setupApp = function(){
 
-    var scene = new EARTH.Scene();
-    scene.setupScene();
-
     this.viewer = new EARTH.Viewer();
-    //this.domElement.style.width = "100px";
-    //this.domElement.style.height = "200px";
     this.viewer.setDomElement(this.domElement);
-    this.viewer.setScene(scene);
     this.viewer.setupViewer();
 
-    this.earth = new EARTH.Earth;
-    this.earth.setupEarth();
-
-    this.viewer.scene.scene.add( this.earth.earthObject );
-    this.viewer.scene.scene.add( this.earth.hollowObject );
-    this.viewer.earth = this.earth;
-
-    this.path = new EARTH.Path;
-    this.path.setup();
-
-    this.viewer.scene.scene.add( this.path.pointCloud );
-
-    this.skybox = new EARTH.Skybox;
-    this.skybox.setup();
-    this.viewer.scene.scene.add( this.skybox.skyObject );
-
-    this.viewer.scene.scene.add( this.viewer.scene.camera );
-
-    var country = document.getElementsByTagName("section")[0].getAttribute("country");
+        var country = document.getElementsByTagName("section")[0].getAttribute("country");
     if(!country || country == "none")
         country = EARTH.currentCountry;
     if(country.charAt(0) == "/")
@@ -92,15 +66,19 @@ EARTH.App.prototype.setupApp = function(){
     this.focus(this.lat, this.lon);
     this.viewer.pickCountry(EARTH.countryColorMap[id]);
 
-    /*var gui = new dat.GUI();
+    var gui = new dat.GUI();
     document.getElementsByClassName("ac")[0].style.zIndex = "1000";
     var that = this;
-    gui.add(this, 'lat', -90, 90).name('lat').onChange(function(val){
+    /*gui.add(this, 'lat', -90, 90).name('lat').onChange(function(val){
         that.focus(val, that.lon);
     });
     gui.add(this, 'lon', -180, 180).name('lon').onChange(function(val){
         that.focus(that.lat, val);
     });*/
+    gui.add(this.viewer.blur.shader.uniforms.radius, 'value', 0.0, 10.0).name('radius');
+    gui.add(this.viewer.blur.shader.uniforms.blur, 'value', 0.0, 1.0).name('blur');
+    gui.add(this.viewer.blur.shader.uniforms.bright, 'value', 0.0, 10.0).name('bright');
+    gui.add(this.viewer.blur, 'renderMode', 0, 2);
 };
 
 EARTH.App.prototype.toogleEarth = function(){
