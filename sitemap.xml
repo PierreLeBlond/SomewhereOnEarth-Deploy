@@ -3,8 +3,68 @@
   
   <url>
     <loc>https://www.somewhereonearth.xyz/</loc>
-    <lastmod>2016-11-01T11:24:09+01:00</lastmod>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/austria/dico/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/czechia/dico/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/germany/dico/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/austria/info/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/bosnia/info/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/croatia/info/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/czechia/info/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/germany/info/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/hungary/info/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/serbia/info/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/slovakia/info/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/bosnia/sarajevo/</loc>
+    <lastmod>2016-11-22T19:27:41+02:00</lastmod>
   </url>
   
   <url>
@@ -33,12 +93,37 @@
   </url>
   
   <url>
+    <loc>https://www.somewhereonearth.xyz/country/austria/</loc>
+    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/bosnia/</loc>
+    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/croatia/</loc>
+    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.somewhereonearth.xyz/country/czechia/</loc>
     <lastmod>2016-08-28T19:27:41+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.somewhereonearth.xyz/country/germany/</loc>
+    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/hungary/</loc>
+    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/serbia/</loc>
     <lastmod>2016-08-28T19:27:41+02:00</lastmod>
   </url>
   
@@ -52,7 +137,15 @@
   </url>
   
   <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/bosnia/</loc>
+  </url>
+  
+  <url>
     <loc>https://www.somewhereonearth.xyz/gallery/canada/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/croatia/</loc>
   </url>
   
   <url>
@@ -65,6 +158,10 @@
   
   <url>
     <loc>https://www.somewhereonearth.xyz/gallery/hungary/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/serbia/</loc>
   </url>
   
   <url>

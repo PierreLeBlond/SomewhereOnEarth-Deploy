@@ -36,8 +36,8 @@ EARTH.Scene.prototype.setupScene = function(){
 
     this.skybox = new EARTH.Skybox;
     this.skybox.setup();
-    this.scene.add( this.skybox.skyObject );
     //this.scene.add( this.camera );
+    this.scene.add( this.skybox.skyObject );
 
     this.earth = new EARTH.Earth;
     this.earth.setupEarth();

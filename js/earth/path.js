@@ -15,14 +15,14 @@ EARTH.Path = function(){
    this.textureLoader                              = new THREE.TextureLoader();
 
    this.uniforms                                   = {
-       map:                                        { type: 't', value: this.textureLoader.load("/images/earth/star.png") }
+       map:                                        { type: 't', value: this.textureLoader.load("/images/earth/pin.png") }
    };
 
    this.shaderMaterial                             = new THREE.PointsMaterial({
        map: this.uniforms.map.value,
        transparent: true,
        blending: THREE.NormalBlending,
-       size: 0.05,
+       size: 0.1,
        color: 0xffa265,
        alphaTest: 0.5
    });
@@ -46,7 +46,7 @@ EARTH.Path.prototype.setup = function(){
             var phi = Math.PI/2 - lat * Math.PI / 180 - Math.PI * 0.01;
             var theta = 2 * Math.PI - lon * Math.PI / 180 + Math.PI * 0.06;
 
-            var r = 1.01;
+            var r = 1.005;
 
             this.geometry.vertices.push(
                 new THREE.Vector3(r*Math.cos(theta)*Math.sin(phi), r*Math.cos(phi), r*Math.sin(theta)*Math.sin(phi))

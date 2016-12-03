@@ -6,8 +6,33 @@
     <description>Recent content in Germanies on Somewhere on Earth</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Oct 2016 19:27:41 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 25 Nov 2016 19:27:41 +0200</lastBuildDate>
     <atom:link href="https://www.somewhereonearth.xyz/germany/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dico</title>
+      <link>https://www.somewhereonearth.xyz/germany/dico/</link>
+      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/germany/dico/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;h4&gt; Hi :&lt;/h4&gt;  &lt;h3&gt; Hallo &lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h4&gt; Thanks :&lt;/h4&gt;  &lt;h3&gt; Danke &lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h4&gt; Please :&lt;/h4&gt;  &lt;h3&gt; Bitte &lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h4&gt; Potatoe :&lt;/h4&gt;  &lt;h3&gt; Kartofel &lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h4&gt; Cheers :&lt;/h4&gt;  &lt;h3&gt; Prost &lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Info</title>
+      <link>https://www.somewhereonearth.xyz/germany/info/</link>
+      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/germany/info/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Munich</title>

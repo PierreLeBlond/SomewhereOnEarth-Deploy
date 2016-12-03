@@ -71,7 +71,7 @@
 
 <section country="hungary">
 
-  <h1 id="title" class="script-font switch day" >Hungary</h1>
+  <h1 id="title" class="script-font switch day single" >Hungary</h1>
 
   <div id="main" class="switch day">
 
@@ -217,7 +217,7 @@ vec2 uv_new = uv_out + vec2(uoffset, voffset);
 vec4 color = texture2D(map, uv_out);
 vec4 colorIndex = texture2D(indexmap, uv_new);
 
-vec4 light = vec4(0.2, 0.2, 0.2, 1.0);
+vec4 light = vec4(0.4, 0.4, 0.4, 1.0);
 vec3 lightDirection = normalize(pos_out - sunPosition);
 light.rgb += clamp(dot(-lightDirection, normal_out), 0.0, 1.0)*sunColor*0.01;
 
@@ -252,7 +252,8 @@ gl_FragColor = color;
 varying vec3 uv_out;
 
 void main(){
-uv_out = position;
+vec3 pos = mat3(modelMatrix) * position;
+uv_out = pos;
 vec4 pmp = projectionMatrix*modelViewMatrix*vec4(position, 1.0);
 gl_Position = pmp.xyww;
 }
@@ -302,6 +303,12 @@ vec4 color = texture2D(map, uv_out);
 vec4 sunBlur = vec4(0.0);
 
 vec2 uv_new = uv_out + radius*0.5 - sunPos;
+
+for(int i = 0; i < 12; i++)
+{
+float scale = 1.0 + blur*(float(i)/11.0);
+sunBlur += texture2D(ghostMap, uv_new*scale + sunPos);
+}
 
 for(int i = 0; i < 12; i++)
 {

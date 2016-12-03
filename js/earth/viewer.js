@@ -114,6 +114,18 @@ EARTH.Viewer.prototype.setupViewer = function(){
  * Process all stuff related to animation
  */
 EARTH.Viewer.prototype.animate = function(){
+    /*var angle = (new Date().getTime()/1000.0)%(2*Math.PI);
+    radius = 5.0;
+    console.log(angle);
+
+    var mat = this.blur.scene.sun.sunObject.matrix;
+    mat.identity();
+    mat.multiply(new THREE.Matrix4().makeTranslation(Math.sin(angle)*radius, 0.0, Math.cos(angle)*radius));
+    this.blur.scene.sun.sunObject.updateMatrix();
+
+    this.blur.scene.sun.sunGhostObject.position.x = Math.sin(angle)*radius;
+    this.blur.scene.sun.sunGhostObject.position.z = Math.cos(angle)*radius;
+    this.blur.scene.sun.sunGhostObject.updateMatrix();*/
 };
 
 /**
@@ -158,6 +170,7 @@ EARTH.Viewer.prototype.render = function(){
         this.stats.update();
     this.controls.update();
     this.blur.scene.skybox.skyObject.position.copy(this.blur.scene.camera.position);
+    this.blur.scene.skybox.skyObject.rotation.copy(this.blur.scene.camera.rotation);
 
     this.blur.render();
 };
@@ -243,7 +256,10 @@ EARTH.Viewer.prototype.getIndex = function(x, y){
 
     this.renderer.readRenderTargetPixels(this.renderTarget, 0, 0, this.renderTarget.width, this.renderTarget.height, buffer);
 
-    var index = buffer[(x + this.renderTarget.width * ( this.renderTarget.height - y )) * 4];
+    var top = document.getElementById("earth-div").style.top;
+    console.log(top);
+
+    var index = buffer[(x + this.renderTarget.width * (( this.renderTarget.height ) - y )) * 4];
 
     return index > 0 ? index : -1;
 }

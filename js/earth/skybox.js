@@ -26,18 +26,22 @@ EARTH.Skybox = function(){
 EARTH.Skybox.prototype.setup = function(){
 
     var prefix = "/images/earth/";
-    var suffixe = "stars_";
+    var suffixe = "space_";
     var extend = ".jpg";
 
-    //var directions = ["Right", "Left", "Up", "Down", "Back", "Front"];
-    var directions = ["bk", "dn", "fr", "lf", "rt", "up"];
+    //var directions = ["posx", "negx", "posy", "negy", "posz", "negz"];
+    var directions = ["right", "left", "top", "bottom", "front", "back"];
+    //var directions = ["bk", "dn", "fr", "lf", "rt", "up"];
 
     var textures = [];
     for (var i = 0; i < 6; i++){
         textures.push(prefix + suffixe + directions[i] + extend );
+        //textures.push("/images/earth/stars.jpg");
     }
 
     this.uniforms.envMap.value = this.textureLoader.load(textures);
+    //this.uniforms.envMap.value.magFilter = THREE.NearestFilter;
+    //this.uniforms.envMap.value.minFilter = THREE.NearestFilter;
     this.skyShader =  new THREE.ShaderMaterial({
         side:                                       THREE.DoubleSide,
         uniforms:                                   this.uniforms,

@@ -1,3 +1,7 @@
+.ac {
+    display: none;
+}
+
 #earth-logo:hover {
     cursor: pointer;
 }
@@ -26,6 +30,7 @@
 
 #earth-div {
     position: fixed;
+    /*top: 3em;*/
     top: 0;
     left: 0;
     width: 100%;

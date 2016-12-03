@@ -10,6 +10,33 @@
     <atom:link href="https://www.somewhereonearth.xyz/country/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>austria</title>
+      <link>https://www.somewhereonearth.xyz/country/austria/</link>
+      <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/austria/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bosnia</title>
+      <link>https://www.somewhereonearth.xyz/country/bosnia/</link>
+      <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/bosnia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>croatia</title>
+      <link>https://www.somewhereonearth.xyz/country/croatia/</link>
+      <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/croatia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>czechia</title>
       <link>https://www.somewhereonearth.xyz/country/czechia/</link>
       <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
@@ -24,6 +51,24 @@
       <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
       
       <guid>https://www.somewhereonearth.xyz/country/germany/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hungary</title>
+      <link>https://www.somewhereonearth.xyz/country/hungary/</link>
+      <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/hungary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>serbia</title>
+      <link>https://www.somewhereonearth.xyz/country/serbia/</link>
+      <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/serbia/</guid>
       <description></description>
     </item>
     

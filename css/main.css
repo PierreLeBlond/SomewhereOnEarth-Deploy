@@ -275,9 +275,8 @@ section {
 
 #title {
     /*text-align: center;*/
-    color: #777777;
+    color: #222222;
     font-size: 1em;
-    border-bottom: dotted 2px grey;
     margin: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -285,8 +284,69 @@ section {
     display: inline-block;
 }
 
+.single {
+    border-bottom: dotted 2px grey;
+}
+
 #title.night {
     display: none;
+}
+
+.info {
+    width: 98%;
+    margin: auto;
+    margin-top: 1em;
+    border: solid 1px #BBBBBB;
+    box-shadow: 0px 0px 5px 5px #BBBBBB;
+}
+
+#dico {
+    width: 30%;
+    margin-left: 1%;
+    float: left;
+}
+
+.info ul {
+    margin: 0;
+    padding: 0;
+}
+
+.info li {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+}
+
+#dico li {
+    width: 100%;
+}
+
+.info h4 {
+    display: block;
+    margin: 0;
+    margin-top: 5px;
+    color: #666666;
+    font-size: 0.8em;
+}
+
+#dico h4 {
+    display: inline-block;
+    padding-left: 10%;
+    float: left;
+}
+
+.info h3 {
+    display: block;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+#dico h3 {
+    display: inline-block;
+    padding-right: 10%;
+    float: right;
 }
 
 article {
@@ -300,6 +360,10 @@ article {
 article h4 {
     margin: 0;
     padding-top: 2%;
+}
+
+.date {
+    color: #666666;
 }
 
 article figure {
@@ -339,13 +403,38 @@ article .post {
     font-family: Josefin Slab;
 }
 
+.quote {
+    width: 100%;
+    height: auto;
+}
+
+.quote p {
+    display: block;
+    width: 50%;
+    padding-left: 50%;
+    color: #222222;
+}
+
+.credit {
+    width: 100%;
+    height: auto;
+}
+
+.credit p {
+    width: 30%;
+    padding-left: 70%;
+    display: block;
+    color: #777777;
+    font-style: italic;
+}
+
 .item-ratio {
     position: relative;
     display: inline-block;
     width: 30%;
     margin-left: 1%;
     margin-right: 1%;
-    margin-top: 2%;
+    margin-top: 1em;
 }
 
 .item-ratio:before {
@@ -669,6 +758,10 @@ footer.night {
 
     .item-title {
         font-size: 4vw;
+    }
+
+    .info li {
+        width: 48%;
     }
 
     article figure img {

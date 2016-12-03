@@ -6,8 +6,17 @@
     <description>Recent content in Slovakia on Somewhere on Earth</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Nov 2016 11:24:09 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 25 Nov 2016 19:27:41 +0200</lastBuildDate>
     <atom:link href="https://www.somewhereonearth.xyz/slovakia/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Info</title>
+      <link>https://www.somewhereonearth.xyz/slovakia/info/</link>
+      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/slovakia/info/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Hitchhiking 101</title>

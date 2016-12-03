@@ -1,6 +1,6 @@
 var EARTH = EARTH || {};
 
-EARTH.currentCountry = "hungary";
+EARTH.currentCountry = "croatia";
 
 EARTH.countryAvailable = {
 97: 3,
@@ -9,7 +9,10 @@ EARTH.countryAvailable = {
 35: 3,
 67: 6,
 133: 6,
-120: 3
+120: 3,
+111: 3,
+94: 3,
+54: 3
 };
 
 EARTH.country = {
@@ -20,7 +23,10 @@ EARTH.country = {
     austria: "AT",
     czechia: "CZ",
     slovakia: "SK",
-    hungary: "HU"
+    hungary: "HU",
+    serbia: "RS",
+    bosnia: "BA",
+    croatia: "HR"
 }
 
 EARTH.countryName = {
@@ -52,7 +58,7 @@ EARTH.countryName = {
 	"BT":"BHUTAN",
 	"BO":"BOLIVIA, PLURINATIONAL STATE OF",
 	"BQ":"BONAIRE, SINT EUSTATIUS AND SABA",
-	"BA":"BOSNIA AND HERZEGOVINA",
+	"BA":"BOSNIA",
 	"BW":"BOTSWANA",
 	"BV":"BOUVET ISLAND",
 	"BR":"BRAZIL",
