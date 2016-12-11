@@ -10,6 +10,15 @@
     <atom:link href="https://www.somewhereonearth.xyz/country/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>albania</title>
+      <link>https://www.somewhereonearth.xyz/country/albania/</link>
+      <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/albania/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>austria</title>
       <link>https://www.somewhereonearth.xyz/country/austria/</link>
       <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
@@ -60,6 +69,15 @@
       <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
       
       <guid>https://www.somewhereonearth.xyz/country/hungary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>montenegro</title>
+      <link>https://www.somewhereonearth.xyz/country/montenegro/</link>
+      <pubDate>Sun, 28 Aug 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/montenegro/</guid>
       <description></description>
     </item>
     

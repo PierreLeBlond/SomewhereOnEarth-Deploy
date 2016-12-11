@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Montenegros on Somewhere on Earth</title>
+    <link>https://www.somewhereonearth.xyz/montenegro/</link>
+    <description>Recent content in Montenegros on Somewhere on Earth</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Nov 2016 19:27:41 +0200</lastBuildDate>
+    <atom:link href="https://www.somewhereonearth.xyz/montenegro/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Info</title>
+      <link>https://www.somewhereonearth.xyz/montenegro/info/</link>
+      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/montenegro/info/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

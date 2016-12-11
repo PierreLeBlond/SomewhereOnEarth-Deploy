@@ -12,7 +12,9 @@ EARTH.countryAvailable = {
 120: 3,
 111: 3,
 94: 3,
-54: 3
+54: 3,
+112: 3,
+69: 3
 };
 
 EARTH.country = {
@@ -26,7 +28,9 @@ EARTH.country = {
     hungary: "HU",
     serbia: "RS",
     bosnia: "BA",
-    croatia: "HR"
+    croatia: "HR",
+    montenegro: "ME",
+    albania: "AL"
 }
 
 EARTH.countryName = {
