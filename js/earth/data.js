@@ -1,6 +1,6 @@
 var EARTH = EARTH || {};
 
-EARTH.currentCountry = "croatia";
+EARTH.currentCountry = "taiwan";
 
 EARTH.countryAvailable = {
 97: 3,
@@ -14,7 +14,11 @@ EARTH.countryAvailable = {
 94: 3,
 54: 3,
 112: 3,
-69: 3
+69: 3,
+140: 3,
+37: 3,
+40: 3,
+19: 3
 };
 
 EARTH.country = {
@@ -30,7 +34,11 @@ EARTH.country = {
     bosnia: "BA",
     croatia: "HR",
     montenegro: "ME",
-    albania: "AL"
+    albania: "AL",
+    greece: "GR",
+    turkey: "TR",
+    japan: "JP",
+    taiwan: "TW"
 }
 
 EARTH.countryName = {

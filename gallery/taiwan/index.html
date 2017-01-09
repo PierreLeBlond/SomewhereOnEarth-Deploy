@@ -1,0 +1,381 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="https://www.somewhereonearth.xyz/css/main.css"/>
+    <link rel="stylesheet" href="https://www.somewhereonearth.xyz/css/earth.css"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Slab" />
+    <title>Somewhere on Earth - Taiwan</title>
+  </head>
+  <body class="switch day">
+
+  <div id="background" class="switch day"></div>
+  <div id="container">
+
+    <header id="header" class="switch day">
+
+      <div id="header-wrap" class="script-font switch day">
+
+        <div class="main-title switch day funky-link" id="first-title">
+          <a href="https://www.somewhereonearth.xyz"><h1 class="switch day">Somewhere...</h1></a>
+        </div>
+
+        <div class="main-title switch day funky-link" id="second-title">
+          <a href="https://www.somewhereonearth.xyz"><h1 class="switch day" >...on Earth</h1></a>
+        </div>
+
+        <div id="main-undertitle">
+          <div id="earth-logo" class="switch day" ></div>
+        </div>
+
+        <h1 id="country-name" class="switch day"></h1>
+
+        <div id="nav-wrap" class="funky-link switch day">
+
+          <nav id="main-nav" class="switch day">
+
+            <ul>
+              <li class="nav-link left-link switch day"> <a href="https://www.somewhereonearth.xyz/article/about"> About </a> </li>
+              <li class="nav-link left-link switch day"> <a href="https://www.somewhereonearth.xyz/article"> Articles </a> </li>
+              <li class="nav-link right-link switch day"> <a href="https://www.somewhereonearth.xyz/gallery"> Gallery </a> </li>
+              <li class="nav-link right-link switch day"> <a href="https://www.somewhereonearth.xyz/country"> Country </a> </li>
+            </ul>
+
+          </nav>
+
+          <nav id="earth-nav" class="switch day">
+
+            <ul>
+              <li class="nav-link left-link funky-link switch day"> <a id="post-link" href="https://www.somewhereonearth.xyz"> Posts </a> </li>
+              <li class="nav-link right-link funky-link switch day"> <a id="gallery-link" href="https://www.somewhereonearth.xyz"> Gallery </a> </li>
+            </ul>
+
+          </nav>
+
+          <div id="nav-switch">
+            <div class="img-wrapper">
+              <img alt="" src="https://www.somewhereonearth.xyz/images/switch.svg">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+
+
+<section country="taiwan">
+
+  <h1 id="title" class="script-font switch day single" >Taiwan</h1>
+
+  <div id="main" class="switch day">
+
+    <article>
+
+      <div class="gallery-content">
+        <div class="gallery" id="gallery-holder" country="taiwan" itemscope itemtype="http://schema.org/ImageGallery">
+
+
+</div>
+
+
+<p><link rel="stylesheet" href="/css/photoswipe.css">
+<link rel="stylesheet" href="/css/default-skin/default-skin.css">
+<link rel="stylesheet" href="/css/gallery.css">
+<script src="/js/photoswipe.min.js"></script>
+<script src="/js/photoswipe-ui-default.min.js"></script>
+<script src="/js/initphotoswipe.js"></script>
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>initPhotoSwipeFromDOM('.gallery');</script>
+</p>
+
+      </div>
+
+    </article>
+
+  </div>
+
+  <div id="earth-section" class="switch day">
+  <div id="earth-div">
+  </div>
+
+  <div id="country-popup">
+    <img alt="bubble" src="/images/earth/bubble.png"/>
+    <div id="text-wrap">
+      <h2 class="script-font" id="country-popup-name"></h2>
+    </div>
+  </div>
+</div>
+
+<script type="x-shader/x-vertex" id="vertexShader">
+
+varying vec2 uv_out;
+varying vec3 pos_out;
+varying vec3 normal_out;
+
+void main(){
+uv_out = uv;
+pos_out = (modelMatrix * vec4(position, 1.0)).xyz;
+normal_out = (modelMatrix * vec4(normal, 0.0)).xyz;
+gl_Position = projectionMatrix*modelViewMatrix*vec4(position, 1.0);
+}
+
+</script>
+
+<script type="x-shader/x-vertex" id="vertexShaderHeightMapping">
+
+uniform sampler2D heightmap;
+
+varying vec2 uv_out;
+varying vec3 pos_out;
+varying vec3 normal_out;
+
+void main(){
+vec4 height = texture2D(heightmap, uv + vec2(0.027, -0.006));
+uv_out = uv;
+vec3 newPosition = (1.0 + height.x*0.1) * position;
+vec4 pos = projectionMatrix*modelViewMatrix*vec4(position, 1.0);
+pos_out = (modelMatrix * vec4(position, 1.0)).xyz;
+normal_out = (modelMatrix * vec4(normal, 0.0)).xyz;
+gl_Position = pos;
+}
+
+</script>
+
+<script type="x-shader/x-fragment" id="fragmentShader">
+
+uniform sampler2D map;
+uniform sampler2D blurmap;
+uniform sampler2D secondmap;
+uniform sampler2D indexmap;
+uniform int pickedindex;
+uniform int lookindex;
+
+uniform float uoffset;
+uniform float voffset;
+
+uniform vec3 sunPosition;
+uniform vec3 sunColor;
+
+varying vec2 uv_out;
+varying vec3 pos_out;
+varying vec3 normal_out;
+
+void main(){
+vec2 uv_new = uv_out + vec2(uoffset, voffset);
+vec4 color = texture2D(map, uv_out);
+vec4 colorIndex = texture2D(indexmap, uv_new);
+
+vec4 light = vec4(0.4, 0.4, 0.4, 1.0);
+vec3 lightDirection = normalize(pos_out - sunPosition);
+light.rgb += clamp(dot(-lightDirection, normal_out), 0.0, 1.0)*sunColor*0.01;
+
+if(int(colorIndex.x*255.0) == pickedindex)
+gl_FragColor = color*1.2;
+else if(int(colorIndex.x*255.0) == lookindex)
+gl_FragColor = color;
+else
+gl_FragColor = color*light;
+}
+
+</script>
+
+<script type="x-shader/x-fragment" id="fragmentShaderDetector">
+
+uniform float uoffset;
+uniform float voffset;
+uniform sampler2D map;
+
+varying vec2 uv_out;
+
+void main(){
+vec2 uv_new = uv_out + vec2(uoffset, voffset);
+vec4 color = texture2D(map, uv_new);
+gl_FragColor = color;
+}
+
+</script>
+
+<script type="x-shader/x-vertex" id="skyboxVertexShader">
+
+varying vec3 uv_out;
+
+void main(){
+vec3 pos = mat3(modelMatrix) * position;
+uv_out = pos;
+vec4 pmp = projectionMatrix*modelViewMatrix*vec4(position, 1.0);
+gl_Position = pmp.xyww;
+}
+
+</script>
+
+<script type="x-shader/x-fragment" id="skyboxFragmentShader">
+
+uniform samplerCube envMap;
+
+varying vec3 uv_out;
+
+void main(){
+vec4 color = textureCube(envMap, uv_out);
+gl_FragColor = color;
+}
+
+</script>
+
+<script type="x-shader/x-vertex" id="blurVertexShader">
+
+varying vec2 uv_out;
+
+void main(){
+uv_out = uv;
+gl_Position = vec4(position.xy, 0.0, 1.0);
+}
+
+</script>
+
+<script type="x-shader/x-fragment" id="blurFragmentShader">
+
+uniform sampler2D map;
+uniform sampler2D ghostMap;
+uniform vec2 sunPos;
+uniform vec2 earthPos;
+
+uniform float radius;
+uniform float blur;
+uniform float bright;
+
+varying vec2 uv_out;
+
+void main(){
+vec4 color = texture2D(map, uv_out);
+
+vec4 sunBlur = vec4(0.0);
+
+vec2 uv_new = uv_out + radius*0.5 - sunPos;
+
+for(int i = 0; i < 12; i++)
+{
+float scale = 1.0 + blur*(float(i)/11.0);
+sunBlur += texture2D(ghostMap, uv_new*scale + sunPos);
+}
+
+for(int i = 0; i < 12; i++)
+{
+float scale = 1.0 - blur*(float(i)/11.0);
+sunBlur += texture2D(ghostMap, uv_new*scale + sunPos);
+}
+
+sunBlur /= 12.0;
+sunBlur *= bright;
+
+vec4 earthBlur = vec4(0.0);
+
+uv_new = uv_out + radius*0.5 - earthPos;
+
+for(int i = 0; i < 12; i++)
+{
+float scale = 1.0 - blur*(float(i)/11.0);
+earthBlur += texture2D(ghostMap, uv_new*scale + earthPos);
+}
+
+earthBlur /= 12.0;
+earthBlur *= bright;
+
+
+
+gl_FragColor = mix(color, sunBlur, (sunBlur.r + sunBlur.g + sunBlur.b)/3.0);
+}
+
+</script>
+
+
+
+<script src="https://www.somewhereonearth.xyz/js/three.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/OrbitControls.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/Stats.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/dat.gui.min.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/data.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/scene.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/detector.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/blur.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/viewer.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/earth.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/sun.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/path.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/skybox.js"></script>
+<script src="https://www.somewhereonearth.xyz/js/earth/app.js"></script>
+
+
+
+</section>
+
+<script src="/js/bower_components/cloudinary-core/cloudinary-core-shrinkwrap.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<footer class="switch day">
+
+  <div id="legal-notice">
+    <p class="light-switch"> Build with love by © Pierre Lespingal 2016 - pierre.lespingal@gmail.com </p>
+    <p class="light-switch funky-link">Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a></p>
+  </div>
+
+</footer>
+
+</div>
+
+</body>
+</html>
+
+

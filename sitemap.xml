@@ -3,8 +3,88 @@
   
   <url>
     <loc>https://www.somewhereonearth.xyz/</loc>
-    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+    <lastmod>2017-01-09T19:27:41+02:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/taiwan/</loc>
+    <lastmod>2017-01-09T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/taiwan/</loc>
+    <lastmod>2017-01-09T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/japan/</loc>
+    <lastmod>2017-01-01T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/japan/</loc>
+    <lastmod>2017-01-01T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/turkey/</loc>
+    <lastmod>2016-12-24T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/turkey/</loc>
+    <lastmod>2016-12-24T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/greece/</loc>
+    <lastmod>2016-12-15T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/greece/</loc>
+    <lastmod>2016-12-15T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/albania/</loc>
+    <lastmod>2016-12-14T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/albania/</loc>
+    <lastmod>2016-12-14T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/montenegro/</loc>
+    <lastmod>2016-12-12T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/montenegro/</loc>
+    <lastmod>2016-12-12T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/croatia/</loc>
+    <lastmod>2016-12-01T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/croatia/</loc>
+    <lastmod>2016-12-01T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/bosnia/</loc>
+    <lastmod>2016-11-28T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/bosnia/</loc>
+    <lastmod>2016-11-28T19:27:41+02:00</lastmod>
   </url>
   
   <url>
@@ -58,7 +138,17 @@
   </url>
   
   <url>
+    <loc>https://www.somewhereonearth.xyz/greece/info/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.somewhereonearth.xyz/hungary/info/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/japan/info/</loc>
     <lastmod>2016-11-25T19:27:41+02:00</lastmod>
   </url>
   
@@ -78,8 +168,48 @@
   </url>
   
   <url>
+    <loc>https://www.somewhereonearth.xyz/taiwan/info/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/turkey/info/</loc>
+    <lastmod>2016-11-25T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.somewhereonearth.xyz/bosnia/sarajevo/</loc>
     <lastmod>2016-11-22T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/serbia/</loc>
+    <lastmod>2016-11-17T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/serbia/</loc>
+    <lastmod>2016-11-17T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/hungary/</loc>
+    <lastmod>2016-11-11T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/hungary/</loc>
+    <lastmod>2016-11-11T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/slovakia/</loc>
+    <lastmod>2016-11-01T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/slovakia/</loc>
+    <lastmod>2016-11-01T19:27:41+02:00</lastmod>
   </url>
   
   <url>
@@ -88,13 +218,43 @@
   </url>
   
   <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/austria/</loc>
+    <lastmod>2016-10-28T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.somewhereonearth.xyz/czechia/prague/</loc>
     <lastmod>2016-10-28T19:27:41+02:00</lastmod>
   </url>
   
   <url>
+    <loc>https://www.somewhereonearth.xyz/country/austria/</loc>
+    <lastmod>2016-10-28T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/czechia/</loc>
+    <lastmod>2016-10-23T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/czechia/</loc>
+    <lastmod>2016-10-23T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.somewhereonearth.xyz/germany/munich/</loc>
     <lastmod>2016-10-21T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/gallery/germany/</loc>
+    <lastmod>2016-10-17T19:27:41+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.somewhereonearth.xyz/country/germany/</loc>
+    <lastmod>2016-10-17T19:27:41+02:00</lastmod>
   </url>
   
   <url>
@@ -108,101 +268,13 @@
   </url>
   
   <url>
-    <loc>https://www.somewhereonearth.xyz/country/albania/</loc>
-    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/country/austria/</loc>
-    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/country/bosnia/</loc>
-    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/country/croatia/</loc>
-    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/country/czechia/</loc>
-    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/country/germany/</loc>
-    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/country/hungary/</loc>
-    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/country/montenegro/</loc>
-    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/country/serbia/</loc>
-    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/country/slovakia/</loc>
-    <lastmod>2016-08-28T19:27:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/gallery/montenegro/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/gallery/austria/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/gallery/bosnia/</loc>
+    <loc>https://www.somewhereonearth.xyz/gallery/usa/</loc>
+    <lastmod>2015-04-01T19:27:41+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.somewhereonearth.xyz/gallery/canada/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/gallery/croatia/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/gallery/czechia/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/gallery/germany/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/gallery/hungary/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/gallery/albania/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/gallery/serbia/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/gallery/slovakia/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.somewhereonearth.xyz/gallery/usa/</loc>
+    <lastmod>2015-01-01T19:27:41+02:00</lastmod>
   </url>
   
 </urlset>

@@ -6,329 +6,629 @@
     <description>Recent content on Somewhere on Earth</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Nov 2016 19:27:41 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 09 Jan 2017 19:27:41 +0200</lastBuildDate>
     <atom:link href="https://www.somewhereonearth.xyz/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Dico</title>
-      <link>https://www.somewhereonearth.xyz/albania/dico/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      <title>Taiwan</title>
+      <link>https://www.somewhereonearth.xyz/gallery/taiwan/</link>
+      <pubDate>Mon, 09 Jan 2017 19:27:41 +0200</pubDate>
       
-      <guid>https://www.somewhereonearth.xyz/albania/dico/</guid>
-      <description></description>
-    </item>
+      <guid>https://www.somewhereonearth.xyz/gallery/taiwan/</guid>
+      <description>&lt;div class=&#34;gallery&#34; id=&#34;gallery-holder&#34; country=&#34;taiwan&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/photoswipe.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/default-skin/default-skin.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/gallery.css&#34;&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe-ui-default.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/initphotoswipe.js&#34;&gt;&lt;/script&gt;
+
+
+
+&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
+
+&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
+
+&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
     
-    <item>
-      <title>Dico</title>
-      <link>https://www.somewhereonearth.xyz/austria/dico/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+    &lt;div class=&#34;pswp__container&#34;&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
+    &lt;div class=&#34;pswp__top-bar&#34;&gt;
       
-      <guid>https://www.somewhereonearth.xyz/austria/dico/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;h4&gt; Hi :&lt;/h4&gt;  &lt;h3&gt; Hallo &lt;/h3&gt;&lt;/li&gt;
-&lt;li&gt;&lt;h4&gt; Thanks :&lt;/h4&gt;  &lt;h3&gt; Danke &lt;/h3&gt;&lt;/li&gt;
-&lt;li&gt;&lt;h4&gt; Please :&lt;/h4&gt;  &lt;h3&gt; Bitte &lt;/h3&gt;&lt;/li&gt;
-&lt;li&gt;&lt;h4&gt; Potatoe :&lt;/h4&gt;  &lt;h3&gt; Kartofel &lt;/h3&gt;&lt;/li&gt;
-&lt;li&gt;&lt;h4&gt; Cheers :&lt;/h4&gt;  &lt;h3&gt; Prost &lt;/h3&gt;&lt;/li&gt;
-&lt;/ul&gt;
+      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
+      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
+      
+      
+      &lt;div class=&#34;pswp__preloader&#34;&gt;
+        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
+          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
+            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
+      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
+    &lt;/button&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;pswp__caption&#34;&gt;
+      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;initPhotoSwipeFromDOM(&#39;.gallery&#39;);&lt;/script&gt;
+&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Dico</title>
-      <link>https://www.somewhereonearth.xyz/czechia/dico/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      <title>taiwan</title>
+      <link>https://www.somewhereonearth.xyz/country/taiwan/</link>
+      <pubDate>Mon, 09 Jan 2017 19:27:41 +0200</pubDate>
       
-      <guid>https://www.somewhereonearth.xyz/czechia/dico/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;h4&gt; Hi :&lt;/h4&gt;  &lt;h3&gt; Ahoj &lt;/h3&gt;&lt;/li&gt;
-&lt;li&gt;&lt;h4&gt; Thanks :&lt;/h4&gt;  &lt;h3&gt; Díky &lt;/h3&gt;&lt;/li&gt;
-&lt;li&gt;&lt;h4&gt; Please :&lt;/h4&gt;  &lt;h3&gt; Prosím &lt;/h3&gt;&lt;/li&gt;
-&lt;li&gt;&lt;h4&gt; I don&amp;rsquo;t speak czech :&lt;/h4&gt; &lt;h3&gt; Nemluvím česky &lt;/h3&gt;&lt;/li&gt;
-&lt;li&gt;&lt;h4&gt; Cheers :&lt;/h4&gt;  &lt;h3&gt; Na zdravi &lt;/h3&gt;&lt;/li&gt;
-&lt;/ul&gt;
+      <guid>https://www.somewhereonearth.xyz/country/taiwan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Japan</title>
+      <link>https://www.somewhereonearth.xyz/gallery/japan/</link>
+      <pubDate>Sun, 01 Jan 2017 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/gallery/japan/</guid>
+      <description>&lt;div class=&#34;gallery&#34; id=&#34;gallery-holder&#34; country=&#34;japan&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/photoswipe.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/default-skin/default-skin.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/gallery.css&#34;&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe-ui-default.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/initphotoswipe.js&#34;&gt;&lt;/script&gt;
+
+
+
+&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
+
+&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
+
+&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
+    
+    &lt;div class=&#34;pswp__container&#34;&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
+    &lt;div class=&#34;pswp__top-bar&#34;&gt;
+      
+      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
+      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
+      
+      
+      &lt;div class=&#34;pswp__preloader&#34;&gt;
+        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
+          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
+            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
+      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
+    &lt;/button&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;pswp__caption&#34;&gt;
+      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;initPhotoSwipeFromDOM(&#39;.gallery&#39;);&lt;/script&gt;
+&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Dico</title>
-      <link>https://www.somewhereonearth.xyz/germany/dico/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      <title>japan</title>
+      <link>https://www.somewhereonearth.xyz/country/japan/</link>
+      <pubDate>Sun, 01 Jan 2017 19:27:41 +0200</pubDate>
       
-      <guid>https://www.somewhereonearth.xyz/germany/dico/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;h4&gt; Hi :&lt;/h4&gt;  &lt;h3&gt; Hallo &lt;/h3&gt;&lt;/li&gt;
-&lt;li&gt;&lt;h4&gt; Thanks :&lt;/h4&gt;  &lt;h3&gt; Danke &lt;/h3&gt;&lt;/li&gt;
-&lt;li&gt;&lt;h4&gt; Please :&lt;/h4&gt;  &lt;h3&gt; Bitte &lt;/h3&gt;&lt;/li&gt;
-&lt;li&gt;&lt;h4&gt; Potatoe :&lt;/h4&gt;  &lt;h3&gt; Kartofel &lt;/h3&gt;&lt;/li&gt;
-&lt;li&gt;&lt;h4&gt; Cheers :&lt;/h4&gt;  &lt;h3&gt; Prost &lt;/h3&gt;&lt;/li&gt;
-&lt;/ul&gt;
+      <guid>https://www.somewhereonearth.xyz/country/japan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Turkey</title>
+      <link>https://www.somewhereonearth.xyz/gallery/turkey/</link>
+      <pubDate>Sat, 24 Dec 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/gallery/turkey/</guid>
+      <description>&lt;div class=&#34;gallery&#34; id=&#34;gallery-holder&#34; country=&#34;turkey&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/photoswipe.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/default-skin/default-skin.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/gallery.css&#34;&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe-ui-default.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/initphotoswipe.js&#34;&gt;&lt;/script&gt;
+
+
+
+&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
+
+&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
+
+&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
+    
+    &lt;div class=&#34;pswp__container&#34;&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
+    &lt;div class=&#34;pswp__top-bar&#34;&gt;
+      
+      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
+      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
+      
+      
+      &lt;div class=&#34;pswp__preloader&#34;&gt;
+        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
+          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
+            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
+      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
+    &lt;/button&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;pswp__caption&#34;&gt;
+      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;initPhotoSwipeFromDOM(&#39;.gallery&#39;);&lt;/script&gt;
+&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Info</title>
-      <link>https://www.somewhereonearth.xyz/albania/info/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      <title>turkey</title>
+      <link>https://www.somewhereonearth.xyz/country/turkey/</link>
+      <pubDate>Sat, 24 Dec 2016 19:27:41 +0200</pubDate>
       
-      <guid>https://www.somewhereonearth.xyz/albania/info/</guid>
+      <guid>https://www.somewhereonearth.xyz/country/turkey/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Info</title>
-      <link>https://www.somewhereonearth.xyz/austria/info/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      <title>Greece</title>
+      <link>https://www.somewhereonearth.xyz/gallery/greece/</link>
+      <pubDate>Thu, 15 Dec 2016 19:27:41 +0200</pubDate>
       
-      <guid>https://www.somewhereonearth.xyz/austria/info/</guid>
+      <guid>https://www.somewhereonearth.xyz/gallery/greece/</guid>
+      <description>&lt;div class=&#34;gallery&#34; id=&#34;gallery-holder&#34; country=&#34;greece&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/photoswipe.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/default-skin/default-skin.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/gallery.css&#34;&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe-ui-default.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/initphotoswipe.js&#34;&gt;&lt;/script&gt;
+
+
+
+&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
+
+&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
+
+&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
+    
+    &lt;div class=&#34;pswp__container&#34;&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
+    &lt;div class=&#34;pswp__top-bar&#34;&gt;
+      
+      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
+      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
+      
+      
+      &lt;div class=&#34;pswp__preloader&#34;&gt;
+        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
+          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
+            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
+      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
+    &lt;/button&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;pswp__caption&#34;&gt;
+      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;initPhotoSwipeFromDOM(&#39;.gallery&#39;);&lt;/script&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>greece</title>
+      <link>https://www.somewhereonearth.xyz/country/greece/</link>
+      <pubDate>Thu, 15 Dec 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/greece/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Info</title>
-      <link>https://www.somewhereonearth.xyz/bosnia/info/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      <title>Albania</title>
+      <link>https://www.somewhereonearth.xyz/gallery/albania/</link>
+      <pubDate>Wed, 14 Dec 2016 19:27:41 +0200</pubDate>
       
-      <guid>https://www.somewhereonearth.xyz/bosnia/info/</guid>
+      <guid>https://www.somewhereonearth.xyz/gallery/albania/</guid>
+      <description>&lt;div class=&#34;gallery&#34; id=&#34;gallery-holder&#34; country=&#34;albania&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/photoswipe.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/default-skin/default-skin.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/gallery.css&#34;&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe-ui-default.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/initphotoswipe.js&#34;&gt;&lt;/script&gt;
+
+
+
+&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
+
+&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
+
+&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
+    
+    &lt;div class=&#34;pswp__container&#34;&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
+    &lt;div class=&#34;pswp__top-bar&#34;&gt;
+      
+      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
+      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
+      
+      
+      &lt;div class=&#34;pswp__preloader&#34;&gt;
+        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
+          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
+            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
+      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
+    &lt;/button&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;pswp__caption&#34;&gt;
+      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;initPhotoSwipeFromDOM(&#39;.gallery&#39;);&lt;/script&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>albania</title>
+      <link>https://www.somewhereonearth.xyz/country/albania/</link>
+      <pubDate>Wed, 14 Dec 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/albania/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Info</title>
-      <link>https://www.somewhereonearth.xyz/croatia/info/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      <title>Montenegro</title>
+      <link>https://www.somewhereonearth.xyz/gallery/montenegro/</link>
+      <pubDate>Mon, 12 Dec 2016 19:27:41 +0200</pubDate>
       
-      <guid>https://www.somewhereonearth.xyz/croatia/info/</guid>
+      <guid>https://www.somewhereonearth.xyz/gallery/montenegro/</guid>
+      <description>&lt;div class=&#34;gallery&#34; id=&#34;gallery-holder&#34; country=&#34;montenegro&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/photoswipe.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/default-skin/default-skin.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/gallery.css&#34;&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe-ui-default.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/initphotoswipe.js&#34;&gt;&lt;/script&gt;
+
+
+
+&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
+
+&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
+
+&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
+    
+    &lt;div class=&#34;pswp__container&#34;&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
+    &lt;div class=&#34;pswp__top-bar&#34;&gt;
+      
+      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
+      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
+      
+      
+      &lt;div class=&#34;pswp__preloader&#34;&gt;
+        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
+          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
+            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
+      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
+    &lt;/button&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;pswp__caption&#34;&gt;
+      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;initPhotoSwipeFromDOM(&#39;.gallery&#39;);&lt;/script&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>montenegro</title>
+      <link>https://www.somewhereonearth.xyz/country/montenegro/</link>
+      <pubDate>Mon, 12 Dec 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/montenegro/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Info</title>
-      <link>https://www.somewhereonearth.xyz/czechia/info/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      <title>Croatia</title>
+      <link>https://www.somewhereonearth.xyz/gallery/croatia/</link>
+      <pubDate>Thu, 01 Dec 2016 19:27:41 +0200</pubDate>
       
-      <guid>https://www.somewhereonearth.xyz/czechia/info/</guid>
+      <guid>https://www.somewhereonearth.xyz/gallery/croatia/</guid>
+      <description>&lt;div class=&#34;gallery&#34; id=&#34;gallery-holder&#34; country=&#34;croatia&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/photoswipe.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/default-skin/default-skin.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/gallery.css&#34;&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe-ui-default.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/initphotoswipe.js&#34;&gt;&lt;/script&gt;
+
+
+
+&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
+
+&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
+
+&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
+    
+    &lt;div class=&#34;pswp__container&#34;&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
+    &lt;div class=&#34;pswp__top-bar&#34;&gt;
+      
+      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
+      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
+      
+      
+      &lt;div class=&#34;pswp__preloader&#34;&gt;
+        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
+          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
+            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
+      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
+    &lt;/button&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;pswp__caption&#34;&gt;
+      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;initPhotoSwipeFromDOM(&#39;.gallery&#39;);&lt;/script&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>croatia</title>
+      <link>https://www.somewhereonearth.xyz/country/croatia/</link>
+      <pubDate>Thu, 01 Dec 2016 19:27:41 +0200</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/croatia/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Info</title>
-      <link>https://www.somewhereonearth.xyz/germany/info/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      <title>Bosnia</title>
+      <link>https://www.somewhereonearth.xyz/gallery/bosnia/</link>
+      <pubDate>Mon, 28 Nov 2016 19:27:41 +0200</pubDate>
       
-      <guid>https://www.somewhereonearth.xyz/germany/info/</guid>
-      <description></description>
-    </item>
+      <guid>https://www.somewhereonearth.xyz/gallery/bosnia/</guid>
+      <description>&lt;div class=&#34;gallery&#34; id=&#34;gallery-holder&#34; country=&#34;bosnia&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/photoswipe.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/default-skin/default-skin.css&#34;&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.somewhereonearth.xyz/css/gallery.css&#34;&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/photoswipe-ui-default.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://www.somewhereonearth.xyz/js/initphotoswipe.js&#34;&gt;&lt;/script&gt;
+
+
+
+&lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
+
+&lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
+
+&lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
     
-    <item>
-      <title>Info</title>
-      <link>https://www.somewhereonearth.xyz/hungary/info/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+    &lt;div class=&#34;pswp__container&#34;&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
+    &lt;div class=&#34;pswp__top-bar&#34;&gt;
       
-      <guid>https://www.somewhereonearth.xyz/hungary/info/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Info</title>
-      <link>https://www.somewhereonearth.xyz/montenegro/info/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
+      &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
+      &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
+      &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
       
-      <guid>https://www.somewhereonearth.xyz/montenegro/info/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Info</title>
-      <link>https://www.somewhereonearth.xyz/serbia/info/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
       
-      <guid>https://www.somewhereonearth.xyz/serbia/info/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Info</title>
-      <link>https://www.somewhereonearth.xyz/slovakia/info/</link>
-      <pubDate>Fri, 25 Nov 2016 19:27:41 +0200</pubDate>
-      
-      <guid>https://www.somewhereonearth.xyz/slovakia/info/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sarajevo</title>
-      <link>https://www.somewhereonearth.xyz/bosnia/sarajevo/</link>
-      <pubDate>Tue, 22 Nov 2016 19:27:41 +0200</pubDate>
-      
-      <guid>https://www.somewhereonearth.xyz/bosnia/sarajevo/</guid>
-      <description>
+      &lt;div class=&#34;pswp__preloader&#34;&gt;
+        &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
+          &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
+            &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
+      &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
+    &lt;/button&gt;
+    &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
+    &lt;/button&gt;
+    &lt;div class=&#34;pswp__caption&#34;&gt;
+      &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;div class=&#34;quote&#34;&gt;&lt;p&gt;“ J&#39;ai 10 jours, je me souviens... L&#39;explosion terrible qui déchire
-le ciel de nuit et fait pleuvoir dans l&#39;hôpital n&#39;est ni un tir de mortier, ni
-un tir d&#39;artillerie, ni une bombe... C&#39;est un coup de tonnerre de mon tout
-premier orage. Une colère du ciel qui me rassure, autrement plus impressionant
-que le feu des hommes... Car je suis un orphelin de dix jours heureux de sentir
-la nature plus forte qu&#39;eux. [...] et qui aime le bruit du ciel en colère. ” &lt;/p&gt;&lt;/div&gt;
-&lt;div class=&#34;credit&#34;&gt;&lt;p&gt; Enki Bilal, le sommeil du monstre &lt;/p&gt;&lt;/div&gt;
-
-&lt;p&gt;It&amp;rsquo;s with expectation and many questions that I undertook my trip to Sarajevo,
-the capital of Bosnia.&lt;br /&gt;
-Also with difficulties.&lt;br /&gt;
-I wanted to take a train when someone from the hostel I was in told me that trains does no longer make the connection from Belgrade to Sarajevo. A Turkish passer-by wanted to go there, and he booked a shuttle for
-the both of us.&lt;br /&gt;
-At first it was planned for 1am, but then we were told 4am, so we expected to leave between 5am and 6am.&lt;/p&gt;
-
-&lt;p&gt;That how we leaved around 7am.&lt;/p&gt;
-
-&lt;p&gt;After a 6 hours trip, Having hardly slept due to day light, loosing the sensation in my leg but not the pain in my neck, I got out the car in the middle of the old town of Sarajevo.&lt;/p&gt;
-
-&lt;h1 id=&#34;the-set:59bb44a380f66691e4c4ce80f6030633&#34;&gt;The set&lt;/h1&gt;
-
-&lt;p&gt;The old town of Sarajevo is split in two parts.&lt;/p&gt;
-
-&lt;p&gt;The West part is a legacy of the Ottoman Empire, and thus you&amp;rsquo;ll find Mosque,
-small coffee shop to have a Bosnian coffee or a hukka, Bazaar and small house
-and street with Turkish influence.&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://www.somewhereonearth.xyz/images/article/coffee.jpg&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;A Bosnian coffee when perspective got the hell out of here.&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;The east part comes from the time the Austria-Hungary power occupied the
-country. Huge building with sophisticate architecture, large streets, and
-churches.&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://www.somewhereonearth.xyz/images/article/cityhall.jpg&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;The city hall, a mix of two culture...&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;And when I say that the city is split, it&amp;rsquo;s because you literally jump from one atmosphere to the other in
-one step. Look East, you&amp;rsquo;re in Istanbul. Turn around, you&amp;rsquo;re in Vienna.&lt;/p&gt;
-
-&lt;p&gt;Mosque, Orthodox church, Catholic church and Synagogue in a one kilometers
-square. Surrounded by hills who offers Olympic winter&amp;rsquo;s game facilities.&lt;br /&gt;
-Business tower, mall, square, tram, museum.&lt;/p&gt;
-
-&lt;p&gt;And bullets impact on many building.&lt;br /&gt;
-Grenades explosion remains painted in red to remember that each one of
-them has killed at least thirty people.&lt;br /&gt;
-Destroyed building.&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://www.somewhereonearth.xyz/images/article/grenade.jpg&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;...&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-
-
-&lt;h1 id=&#34;the-actors:59bb44a380f66691e4c4ce80f6030633&#34;&gt;The actors&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Franz Ferdinand Carl Ludwig Joseph Maria, Archduke of Austria-Este.&lt;/li&gt;
-&lt;li&gt;Josip Broz Tito, President of Yugoslavia.&lt;/li&gt;
-&lt;li&gt;The Army of Republika Srpska, the Bosnian Serb Army.&lt;/li&gt;
-&lt;li&gt;The people of Sarajevo , 50% of Bosniak, 31% of Serbs, 15% of Croats and 4% of other friendly human life forms.&lt;br /&gt;
-51% Islam, 31% Orthodox, 15% Catholic, 0.3% Agnosticism, 0.8% Atheism and
-1.8% other friendly believers.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;the-plot:59bb44a380f66691e4c4ce80f6030633&#34;&gt;The plot&lt;/h1&gt;
-
-&lt;p&gt;The first act is easy, everyone knows about it.&lt;br /&gt;
-Franz Ferdinand goes to Sarajevo, is killed by member of the Black Hand, and
-the Austria-Hungary empire invade the Kingdom of Serbia, which leads to the
-first World War. Symbolic, but still.&lt;/p&gt;
-
-&lt;p&gt;The second act introduces Tito, the head of the Socialist Federal Republic of Yugoslavia.&lt;br /&gt;
-While he leaded has a dictator, from 1953 to 1980, and seemed to have barely
-heard of human rights, he was considered by the most as a benevolent dictator.
-Aka someone that makes all the decisions, but tells you that its for your own
-good - so far like every dictator, and actually cares for his people and act
-for their own good. It&amp;rsquo;s quite relative of course.&lt;br /&gt;
-But people at this time seemed to have a good life, at least a better one than
-within the other communist countries, some Bosnian guys told me.&lt;br /&gt;
-Until he died in 1980.&lt;/p&gt;
-
-&lt;p&gt;Maybe you&amp;rsquo;ve heard of the final act, without knowing what was at stake.&lt;br /&gt;
-After Tito died, the Muslims and Croats of Bosnia and Herzegovina asked for their
-independence after a referendum in which 99% of the voters agreed.&lt;br /&gt;
-While the rest of the world thought that it was a good idea, The Bosnian Serbs
-wanted to rally the territory of the former Yugoslavia under a unique name,
-their own.&lt;br /&gt;
-The story being complicated enough, let&amp;rsquo;s say it ended up with Sarajevo being
-besieged by The Army of Republica Srpska.&lt;br /&gt;
-Picture a city without power supply, tram, and few food and ammunition.&lt;br /&gt;
-Tanks and snipers on each surrounding hills, randomly shooting at citizens.&lt;br /&gt;
-During 5 years.&lt;br /&gt;
-And for everybody to try to keep a normal citizen live.&lt;/p&gt;
-
-&lt;p&gt;The only path between the city and other areas which wasn&amp;rsquo;t under the Republica
-Srpska influence was the airport, hold by the UN.&lt;br /&gt;
-But there was no way to supply the city there, as people crossing the airport
-would have been shot by the Serbs, or stopped and escorted back by the UN.&lt;br /&gt;
-So, well, they just dig a 800 meters long tunnel under the airport.&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://www.somewhereonearth.xyz/images/article/tunnel.jpg&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;A few meters of the tunnel is still accessible&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-
-
-&lt;p&gt;There are a lot of museum and exhibition now who depict what happened during
-the siege. The most impressive thing is that people of Sarajevo did their best
-to keep smiling, sticking to their everyday life even if they had to run when
-crossing the roads to dodge sniper bullets.&lt;/p&gt;
-
-&lt;p&gt;And how does the siege ended ? In 1994 the UN successfully requested several air strikes
-from the NATO, the North Atlantic Treaty Organisation, upon Republika Srpska.&lt;br /&gt;
-The latter were forced to drive back, as the Bosnian and Croatian were able to
-regain the city surrounding.&lt;br /&gt;
-The siege was officially over on 29 February 1996.&lt;/p&gt;
-
-&lt;p&gt;It doesn&amp;rsquo;t take too many days in Sarajevo to have a glimpse of how awful were
-the Balkan&amp;rsquo;s wars. And this siege is just one example among other genocide and
-mass killings of civilians who happened at this time.&lt;/p&gt;
-
-&lt;p&gt;But it took many years for the rest of the world to look at these people and
-acknowledge that something wasn&amp;rsquo;t ok.&lt;/p&gt;
-
-&lt;p&gt;And it doesn&amp;rsquo;t took me too many seconds to think about Syria.&lt;/p&gt;
+&lt;script&gt;initPhotoSwipeFromDOM(&#39;.gallery&#39;);&lt;/script&gt;
+&lt;/p&gt;
 </description>
     </item>
     

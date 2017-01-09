@@ -25,6 +25,21 @@
     src: url('/fonts/OptimusPrincepsSemiBold.ttf');
 }
 
+@font-face {
+    font-family: coolvetica;
+    src: url('/fonts/coolvetica rg.ttf');
+}
+
+@font-face {
+    font-family: lemonmilk;
+    src: url('/fonts/LemonMilk.otf');
+}
+
+@font-face {
+    font-family: quantify;
+    src: url('/fonts/Quantify-Bold.ttf');
+}
+
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
@@ -90,7 +105,8 @@ a {
 }
 
 .script-font {
-    font-family: optimus, "Open Sans", sans-serif;
+    font-family: lemonmilk, "Open Sans", sans-serif;
+    letter-spacing: 2px;
 }
 
 body {
@@ -479,7 +495,7 @@ article .post {
     position: absolute;
     display: block;
     background-image: url(/images/frame.svg);
-    background-size: 100% 100%;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
@@ -495,11 +511,12 @@ article .post {
 }
 
 .item-title {
+    font-family: quantify;
     position: absolute;
     bottom: 5%;
     left: 5%;
-    font-size: 2vw;
-    color: #454545;
+    font-size: 1.2vw;
+    color: #666666;
 }
 
 .item-title h4 {
@@ -584,7 +601,7 @@ footer.night {
     }
 
     .item-title {
-        font-size: 2.5vw;
+        font-size: 1.5vw;
     }
 }
 
@@ -599,7 +616,7 @@ footer.night {
     }
 
     .main-title h1 {
-        font-size: 5vw;
+        font-size: 4vw;
         vertical-align: middle;
         height: 4rem;
         line-height: 4rem;
@@ -757,7 +774,7 @@ footer.night {
     }
 
     .item-title {
-        font-size: 4vw;
+        font-size: 2.5vw;
     }
 
     .info li {
