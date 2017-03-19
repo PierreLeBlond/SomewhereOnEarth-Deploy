@@ -1,6 +1,6 @@
 var EARTH = EARTH || {};
 
-EARTH.currentCountry = "taiwan";
+EARTH.currentCountry = "vietnam";
 
 EARTH.countryAvailable = {
 97: 3,
@@ -18,7 +18,8 @@ EARTH.countryAvailable = {
 140: 3,
 37: 3,
 40: 3,
-19: 3
+19: 3,
+91: 3
 };
 
 EARTH.country = {
@@ -38,7 +39,8 @@ EARTH.country = {
     greece: "GR",
     turkey: "TR",
     japan: "JP",
-    taiwan: "TW"
+    taiwan: "TW",
+    vietnam: "VN"
 }
 
 EARTH.countryName = {
@@ -283,7 +285,7 @@ EARTH.countryName = {
 	"UZ":"UZBEKISTAN",
 	"VU":"VANUATU",
 	"VE":"VENEZUELA, BOLIVARIAN REPUBLIC OF",
-	"VN":"VIET NAM",
+	"VN":"VIETNAM",
 	"VG":"VIRGIN ISLANDS, BRITISH",
 	"VI":"VIRGIN ISLANDS, U.S.",
 	"WF":"WALLIS AND FUTUNA",

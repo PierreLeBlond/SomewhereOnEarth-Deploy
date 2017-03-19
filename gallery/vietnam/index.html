@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://www.somewhereonearth.xyz/css/main.css"/>
     <link rel="stylesheet" href="https://www.somewhereonearth.xyz/css/earth.css"/>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Slab" />
-    <title>Somewhere on Earth - About</title>
+    <title>Somewhere on Earth - Vietnam</title>
   </head>
   <body class="switch day">
 
@@ -69,85 +69,80 @@
 
 
 
-<section country="none">
+<section country="vietnam">
 
-  <h1 id="title" class="script-font switch day single" >About</h1>
+  <h1 id="title" class="script-font switch day single" >Vietnam</h1>
 
   <div id="main" class="switch day">
 
     <article>
 
-      <div class="article">
-        
+      <div class="gallery-content">
+        <div class="gallery" id="gallery-holder" country="vietnam" itemscope itemtype="http://schema.org/ImageGallery">
 
-<h3 id="hi">Hi !</h3>
 
-<p>Hi !</p>
+</div>
 
-<h3 id="who-are-you">Who are you ?</h3>
 
-<p>Pierre, 23 years old, French.</p>
+<p><link rel="stylesheet" href="/css/photoswipe.css">
+<link rel="stylesheet" href="/css/default-skin/default-skin.css">
+<link rel="stylesheet" href="/css/gallery.css">
+<script src="/js/photoswipe.min.js"></script>
+<script src="/js/photoswipe-ui-default.min.js"></script>
+<script src="/js/initphotoswipe.js"></script>
 
-<h3 id="and-why-interviewing-yourself-which-is-kind-of-odd">And why interviewing yourself, which is kind of odd ?</h3>
 
-<p>To introduce people to this blog, which will talk about my trip around the
-world-ish.</p>
 
-<h3 id="oh-travel-i-love-travel-tell-me-more">Oh, travel, I love travel. Tell me more.</h3>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-<p>There a thousand reasons one should travel that have already been told by all
-backpackers around the world.<br />
-As for me, I want to extend my comfort zone, see the world differently, and
-find what I really want to do with this god damned life of mine.</p>
+<div class="pswp__bg"></div>
 
-<h3 id="where-then">Where then ?</h3>
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
 
-<p>South.
-From France to Greece, then a plane to Japan, and from there all down to New
-Zealand.
-Between these markers, we&rsquo;ll see day by day.</p>
-
-<h3 id="what-will-be-on-this-blog">What will be on this blog ?</h3>
-
-<p>Maybe nothing, maybe stories and photos.</p>
-
-<h3 id="can-i-click-on-the-top-earth-logo">Can I click on the top earth logo ?</h3>
-
-<p>Yes. ( Work in progress )</p>
+<script>initPhotoSwipeFromDOM('.gallery');</script>
+</p>
 
       </div>
 
     </article>
-
-    <aside>
-      
-
-
-<section id="disqus-section">
-  <div>
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-
-(function() {
-  
-  
-  if (window.location.hostname == "localhost")
-   return;
-
-  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-  var disqus_shortname = 'Pierre';
-  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-</section>
-
-
-
-    </aside>
 
   </div>
 
@@ -365,6 +360,8 @@ gl_FragColor = mix(color, sunBlur, (sunBlur.r + sunBlur.g + sunBlur.b)/3.0);
 
 </section>
 
+<script src="/js/bower_components/cloudinary-core/cloudinary-core-shrinkwrap.min.js"></script>
+<script src="/js/gallery.js"></script>
 
 
 <footer class="switch day">

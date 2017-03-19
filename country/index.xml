@@ -6,8 +6,17 @@
     <description>Recent content in Countries on Somewhere on Earth</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Jan 2017 19:27:41 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 17 Mar 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.somewhereonearth.xyz/country/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>vietnam</title>
+      <link>https://www.somewhereonearth.xyz/country/vietnam/</link>
+      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.somewhereonearth.xyz/country/vietnam/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>taiwan</title>
