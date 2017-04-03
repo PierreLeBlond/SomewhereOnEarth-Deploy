@@ -497,7 +497,7 @@ article .post {
     background-image: url(/images/frame.svg);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     text-align: center;
     -webkit-transition: -webkit-filter 1s; /* Safari */
     transition: filter 1s;
