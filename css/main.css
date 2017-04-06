@@ -90,6 +90,13 @@ a {
  * Classes
  */
 
+.image-404 {
+    display: inline-block;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .day {
     -webkit-transition: background-color 1s; /* Safari */
     transition: background-color 1s;

@@ -19,8 +19,8 @@ EARTH.countryAvailable = {
 37: 3,
 40: 3,
 19: 3,
-91: 3,
-123: 3
+91: 6,
+123: 6
 };
 
 EARTH.country = {
