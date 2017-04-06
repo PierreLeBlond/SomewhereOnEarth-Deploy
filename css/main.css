@@ -40,6 +40,11 @@
     src: url('/fonts/Quantify-Bold.ttf');
 }
 
+@font-face {
+    font-family: blacksword;
+    src: url('/fonts/Blacksword.otf');
+}
+
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
@@ -112,7 +117,7 @@ a {
 }
 
 .script-font {
-    font-family: lemonmilk, "Open Sans", sans-serif;
+    font-family: Blacksword, "Open Sans", sans-serif;
     letter-spacing: 2px;
 }
 
@@ -178,14 +183,15 @@ header {
     width: 40%;
     height: 20%;
     padding-top: 1%;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     margin: auto;
     text-align: center;
-    border-bottom: solid 2px grey;
+    border-bottom: solid 1px grey;
 }
 
 .main-title.night {
-    border-bottom: solid 2px white;
+    padding-bottom: 1%;
+    border-bottom: solid 1px white;
 }
 
 .main-title a {
@@ -467,7 +473,6 @@ article .post {
 }
 
 .item {
-    font-family: lemon;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -518,11 +523,10 @@ article .post {
 }
 
 .item-title {
-    font-family: quantify;
     position: absolute;
     bottom: 5%;
     left: 5%;
-    font-size: 1.2vw;
+    font-size: 2vw;
     color: #666666;
 }
 
